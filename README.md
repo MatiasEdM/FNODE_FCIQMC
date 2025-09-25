@@ -1,16 +1,17 @@
 # [RNODE_FCIQMC] FIXED-NODE (RELEASE) FCI-QMC
-=============================================
 
 Archive collecting VMC and FIXED-NODE (RELEASE) FCI-QMC
 results for ab-initio and hubbard lattices.
 
-# Ab-Initio
+Ab-Initio
+========
 
 - Polyacenes
 
 - Coronene
 
-# Hubbard
+Hubbard
+=======
 
 - t10 (U=4.0)
 
