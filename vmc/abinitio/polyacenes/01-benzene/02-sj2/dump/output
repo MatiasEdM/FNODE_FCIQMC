@@ -1,0 +1,120 @@
+Run started: Thu Jul 10 08:39:33 CEST 2025
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 128 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+System:
+  Read Hamiltonian: FCIDUMP_loc_benzene
+  Read orbitals: LTSC_benzene
+  Complex orbitals: F
+
+VMC:
+  nstep: 500000
+  nconfig: 50000
+
+Jastrow: wfn.casl
+
+Multideterminants: wfn.casl
+
+Jastrow dump: jastrow.dat
+
+Multideterminant dump: mdet.dat
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 1563909899 (from timer)
+
+* Loaded integrals for system with nelec=6, ms2=0, norb=6
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 6 (i) values
+  - U_iiii [opp] (local, 1-site): 6 (i) values
+  - U_kkii [opp] (local, 2-site): 30 contribs. from 6 (i) values
+  - U_kkii [par] (local, 2-site): 15 contribs. from 5 (i) values
+  - T_ji (single, 2-site): 30 contribs. from 6 (i) values
+  - U_kkji [opp] (single, 2/3-site): 180 contribs. from 30 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 150 contribs. from 30 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 900 contribs. from 30 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 170 contribs. from 20 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 255
+* Reading override orbitals from file "LTSC_benzene".
+* Automatically set Site kinds:
+  [ 1, 1, 1, 1, 1, 1, 1 ]
+* Automatically set Site pair kinds:
+  Site 1: [ 0, 1, 2, 3, 4, 5 ]
+  Site 2: [ 1, 0, 2, 3, 5, 4 ]
+  Site 3: [ 2, 2, 0, 5, 3, 3 ]
+  Site 4: [ 3, 3, 5, 0, 2, 2 ]
+  Site 5: [ 4, 5, 3, 2, 0, 1 ]
+  Site 6: [ 5, 4, 3, 2, 1, 0 ]
+General system setup:
+* Number of sites       : 6
+* Number of electrons   : 6
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 6
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Writing full Jastrow parameter lists to "jastrow.dat".
+* Multideterminant parameter file: "wfn.casl"
+* Writing multideterminant information to "mdet.dat".
+* Not using a backflow transformation
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69862676102028
+    - Ttot/t = -10.364976102027519
+    - Utot/t = 3.9088411951551225
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  20.2246
+* Sample config after equilibration:
+  [draw: system geometry not defined]
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.80s]
+* Acceptance ratio (%)     =  20.2095
+* Etot/t                   =  -2.306986004098E+02 +/-   5.289558711079E-05
+  > Ttot/t                 =  -1.036537265704E+01 +/-   2.989197016403E-04
+  > Utot/t                 =   3.909264101444E+00 +/-   2.925551677579E-04
+* var[Eloc/t]              =   1.456507432168E-03 +/-   1.372725150981E-05
+* Correlation length       =   9.614194542892E-01
+
+VDAGGER finished.
+Total VDAGGER walltime: 2.53s
+
+Run ended: Thu Jul 10 08:40:05 CEST 2025

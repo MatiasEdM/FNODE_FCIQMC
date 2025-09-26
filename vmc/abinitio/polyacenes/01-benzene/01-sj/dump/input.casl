@@ -1,0 +1,12 @@
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+System:
+  Read Hamiltonian: FCIDUMP_loc_benzene
+  Read orbitals: LTSC_benzene
+  Complex orbitals: F
+VMC:
+  nstep: 500000
+  nconfig: 50000
+Jastrow: wfn.casl
+Jastrow dump: jastrow.dat

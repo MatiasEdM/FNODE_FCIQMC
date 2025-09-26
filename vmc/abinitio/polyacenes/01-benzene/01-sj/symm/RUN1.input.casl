@@ -1,0 +1,26 @@
+General:
+   Random seed: timer
+Plan:
+  VMC-optimization:
+    Minimum cycles: 5
+    Convergence cycles: 3
+System:
+  Read Hamiltonian: FCIDUMP_loc_benzene
+  Read orbitals: LTSC_benzene
+  Complex orbitals: F
+  Geometry:
+    r_5: [  0.00000000000000,  2.63994739601739 ]
+    r_4: [  2.28626150960564,  1.31997369800870 ]
+    r_6: [  2.28626150960564, -1.31997369800870 ]
+    r_2: [  0.00000000000000, -2.63994739601739 ]
+    r_3: [ -2.28626150960564, -1.31997369800870 ]
+    r_1: [ -2.28626150960564,  1.31997369800870 ]
+    Tolerance: 0.05
+  T relative tolerance: 1.0E-3
+  Tij relative tolerance: 5.0E-3
+VMC:
+  nstep: 500000
+  nconfig: 50000
+Optimization:
+   max_niter: 1
+Jastrow: wfn.casl
