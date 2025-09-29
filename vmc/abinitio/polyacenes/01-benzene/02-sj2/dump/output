@@ -1,4 +1,4 @@
-Run started: Thu Jul 10 08:39:33 CEST 2025
+Run started: Sat Sep 27 08:24:07 CEST 2025
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -50,7 +50,7 @@ Multideterminant dump: mdet.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 1563909899 (from timer)
+* Random seed: 1946132712 (from timer)
 
 * Loaded integrals for system with nelec=6, ms2=0, norb=6
 * INFO: setting number of electrons from integrals file.
@@ -66,15 +66,23 @@ General setup:
   - U_lkji [par] (double, 4-site): 170 contribs. from 20 (i,j) pairs
   - Max. no. wfn. ratios in Eloc: 255
 * Reading override orbitals from file "LTSC_benzene".
+* Site labels:
+  [draw_int: system geometry not defined]
 * Automatically set Site kinds:
-  [ 1, 1, 1, 1, 1, 1, 1 ]
+  [ 1, 1, 1, 1, 1, 1 ]
+  [draw_int: system geometry not defined]
+* Maximum Site kind: 1
+* Number of site-pair kinds with Tij=0: 0
 * Automatically set Site pair kinds:
-  Site 1: [ 0, 1, 2, 3, 4, 5 ]
-  Site 2: [ 1, 0, 2, 3, 5, 4 ]
-  Site 3: [ 2, 2, 0, 5, 3, 3 ]
-  Site 4: [ 3, 3, 5, 0, 2, 2 ]
-  Site 5: [ 4, 5, 3, 2, 0, 1 ]
-  Site 6: [ 5, 4, 3, 2, 1, 0 ]
+  Site 1: [ 0, 4, 1, -5, -1, -2 ]
+  Site 2: [ 4, 0, 1, -4, -3, -1 ]
+  Site 3: [ 1, 1, 0, -2, -4, -5 ]
+  Site 4: [ -5, -4, -2, 0, 1, 1 ]
+  Site 5: [ -1, -3, -4, 1, 0, 4 ]
+  Site 6: [ -2, -1, -5, 1, 4, 0 ]
+  For site 1 of kind 1:
+  [draw_int: system geometry not defined]
+* Maximum (unsigned) Site pair kind: 5
 General system setup:
 * Number of sites       : 6
 * Number of electrons   : 6
@@ -95,26 +103,44 @@ Trial wave function setup:
 VMC #1:
 * Size of Hilbert space =   4.0000E+02
 * Deterministic energy evaluation:
-  > Deterministic Etot/t = -230.69862676102028
-    - Ttot/t = -10.364976102027519
-    - Utot/t = 3.9088411951551225
+  > Deterministic Etot/t = -230.69876331411530
+    - Ttot/t = -10.364915545281578
+    - Utot/t = 3.9086440853141737
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
   Done. [total walltime: 0.01s]
-* Equil. acc.ratio (%)     =  20.2246
+* Equil. acc.ratio (%)     =  40.3014
 * Sample config after equilibration:
   [draw: system geometry not defined]
 * Number of accum. steps   = 500480 x 10
 * Running VMC accumulation.
-  Done. [total walltime: 1.80s]
-* Acceptance ratio (%)     =  20.2095
-* Etot/t                   =  -2.306986004098E+02 +/-   5.289558711079E-05
-  > Ttot/t                 =  -1.036537265704E+01 +/-   2.989197016403E-04
-  > Utot/t                 =   3.909264101444E+00 +/-   2.925551677579E-04
-* var[Eloc/t]              =   1.456507432168E-03 +/-   1.372725150981E-05
-* Correlation length       =   9.614194542892E-01
+  Done. [total walltime: 1.88s]
+* Acceptance ratio (%)     =  40.2355
+* Etot/t                   =  -2.306988223383E+02 +/-   5.242258227219E-05
+  > Ttot/t                 =  -1.036434292716E+01 +/-   2.891636643776E-04
+  > Utot/t                 =   3.908012443018E+00 +/-   2.853569146686E-04
+* var[Eloc/t]              =   1.345839055456E-03 +/-   7.724690383936E-06
+* Correlation length       =   1.021951816222E+00
+* log10 Psi^2 range: -6.0960733188612171 -- -1.9061489718649325
+* log10 Pgen range : -6.0960733188612171 -- -1.9061489718649325
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.500      0.500
+      2        0.502      0.497
+      3        0.500      0.506
+      4        0.499      0.504
+      5        0.499      0.495
+      6        0.500      0.497
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.043
+      1      4        1.082      1.484      3.498
+      2      4        0.156      0.846      1.101
+      3      4        0.080      0.421      0.543
+      4      4        0.229      2.165      1.875
+      5      4        0.117      1.084      0.940
 
 VDAGGER finished.
-Total VDAGGER walltime: 2.53s
+Total VDAGGER walltime: 2.54s
 
-Run ended: Thu Jul 10 08:40:05 CEST 2025
+Run ended: Sat Sep 27 08:24:39 CEST 2025

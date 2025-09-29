@@ -1,0 +1,49 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -1.1110693944346932, optimizable ]
+  e-e term:
+    Range: 4
+    Parameters:
+      c_1,1: [ -0.21341421090064044, optimizable ]
+      c_1,2: [ -0.15054624574058142, optimizable ]
+      c_2,1: [ 6.3639648641779997E-002, optimizable ]
+      c_2,2: [ 1.6002109400100724E-002, optimizable ]
+      c_3,1: [ 0.11832771383894954, optimizable ]
+      c_3,2: [ -4.4626819730334721E-002, optimizable ]
+      c_4,1: [ 3.3880096690558976E-002, optimizable ]
+      c_4,2: [ -3.6359155933936974E-002, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.35012008801119132, optimizable ]
+      c_2: [ -9.3322724223355635E-002, optimizable ]
+      c_3: [ -6.8311435057153022E-002, optimizable ]
+      c_4: [ 1.2084547058476679E-002, optimizable ]
+      c_5: [ 1.1848211081481427E-002, optimizable ]
+  Term mode: site centric
+
+MULTIDETERMINANTS:
+  CSF 1:
+    c: [ 1.0000000000000000, fixed ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 2, 3 ], c: 1.0000000000000000 ]
+  CSF 2:
+    c: [ -7.5214229472135449E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 4 ], Spin 2: [ 1, 2, 4 ], c: 1.0000000000000000 ]
+  CSF 3:
+    c: [ -9.0252208022992442E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 5, 3 ], Spin 2: [ 1, 5, 3 ], c: 1.0000000000000000 ]
+  CSF 4:
+    c: [ 5.2812511666098724E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 4, 3 ], Spin 2: [ 1, 2, 5 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 1, 2, 5 ], Spin 2: [ 1, 4, 3 ], c: 1.0000000000000000 ]
+  CSF 5:
+    c: [ -1.2904737840911411E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 4, 5 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 1, 4, 5 ], Spin 2: [ 1, 2, 3 ], c: 1.0000000000000000 ]
+  CSF 6:
+    c: [ 1.2297036066179982E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 6, 3 ], Spin 2: [ 5, 2, 3 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 5, 2, 3 ], Spin 2: [ 1, 6, 3 ], c: 1.0000000000000000 ]
+    Det 3: [ Spin 1: [ 4, 2, 3 ], Spin 2: [ 1, 2, 6 ], c: -1.0000000000000000 ]
+    Det 4: [ Spin 1: [ 1, 2, 6 ], Spin 2: [ 4, 2, 3 ], c: -1.0000000000000000 ]

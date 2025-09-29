@@ -6,8 +6,8 @@
 #SBATCH --ntasks=128
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
-#SBATCH --time=2:00:00
-#SBATCH --partition=p.2h
+#SBATCH --time=02:00:00
+#SBATCH --partition=p.2h.big
 
 ulimit -s unlimited 2> /dev/null
 export OMP_NUM_THREADS=1
@@ -22,7 +22,7 @@ echo "Run started: $(date)"
 echo "Using VDAGGER_ARCH = gnu7_fkfamd_cluster"
 echo "Running 1x128 MPI processes."
 echo
-srun /home/lopezrios/dev/vdagger/build_gnu7_fkfamd_cluster_main_opt/bin/vdagger "input.casl"
+srun /home/dimauro/vdagger/build_gnu7_fkfamd_cluster_main_opt/bin/vdagger "input.casl"
 echo
 echo "Run ended: $(date)"
 rm -f ".vdagger.lock"

@@ -1,4 +1,4 @@
-Run started: Wed  9 Jul 10:09:40 CEST 2025
+Run started: Fri Sep 26 11:46:58 CEST 2025
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -57,7 +57,7 @@ Backflow dump: backflow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 1464774505 (from timer)
+* Random seed: 1872069606 (from timer)
 
 * Loaded integrals for system with nelec=6, ms2=0, norb=6
 * INFO: setting number of electrons from integrals file.
@@ -73,15 +73,38 @@ General setup:
   - U_lkji [par] (double, 4-site): 170 contribs. from 20 (i,j) pairs
   - Max. no. wfn. ratios in Eloc: 255
 * Reading override orbitals from file "LTSC_benzene".
+* Site labels:
+  +-----+
+  |  5  |
+  |1   4|
+  |3   6|
+  |  2  |
+  +-----+
 * Automatically set Site kinds:
-  [ 1, 1, 1, 1, 1, 1, 1 ]
+  [ 1, 1, 1, 1, 1, 1 ]
+  +-----+
+  |  1  |
+  |1   1|
+  |1   1|
+  |  1  |
+  +-----+
+* Maximum Site kind: 1
+* Number of site-pair kinds with Tij=0: 0
 * Automatically set Site pair kinds:
-  Site 1: [ 0, 1, 2, 3, 4, 5 ]
-  Site 2: [ 1, 0, 2, 3, 5, 4 ]
-  Site 3: [ 2, 2, 0, 5, 3, 3 ]
-  Site 4: [ 3, 3, 5, 0, 2, 2 ]
-  Site 5: [ 4, 5, 3, 2, 0, 1 ]
-  Site 6: [ 5, 4, 3, 2, 1, 0 ]
+  Site 1: [ 0, 4, 1, -5, -1, -2 ]
+  Site 2: [ 4, 0, 1, -4, -3, -1 ]
+  Site 3: [ 1, 1, 0, -2, -4, -5 ]
+  Site 4: [ -5, -4, -2, 0, 1, 1 ]
+  Site 5: [ -1, -3, -4, 1, 0, 4 ]
+  Site 6: [ -2, -1, -5, 1, 4, 0 ]
+  For site 1 of kind 1:
+  +--------+
+  |   -1   |
+  | 0    -5|
+  | 1    -2|
+  |    4   |
+  +--------+
+* Maximum (unsigned) Site pair kind: 5
 General system setup:
 * Number of sites       : 6
 * Number of electrons   : 6
@@ -102,31 +125,49 @@ Trial wave function setup:
 VMC #1:
 * Size of Hilbert space =   4.0000E+02
 * Deterministic energy evaluation:
-  > Deterministic Etot/t = -230.70020280142094
-    - Ttot/t = -10.363270802924058
-    - Utot/t = 3.9055598556510120
+  > Deterministic Etot/t = -230.70021468708336
+    - Ttot/t = -10.363253044214074
+    - Utot/t = 3.9055302112785739
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
-  Done. [total walltime: 0.01s]
-* Equil. acc.ratio (%)     =  18.0194
+  Done. [total walltime: 0.03s]
+* Equil. acc.ratio (%)     =  32.5285
 * Sample config after equilibration:
   +-----+
-  |  d  |
-  |u   2|
-  |u   0|
+  |  0  |
+  |2   u|
+  |u   d|
   |  d  |
   +-----+
 * Number of accum. steps   = 5120 x 10
 * Running VMC accumulation.
   Done. [total walltime: 0.03s]
-* Acceptance ratio (%)     =  17.8828
-* Etot/t                   =  -2.307001228715E+02 +/-   1.085770750136E-04
-  > Ttot/t                 =  -1.036398667965E+01 +/-   3.133284507973E-03
-  > Utot/t                 =   3.906355662293E+00 +/-   3.128769451343E-03
-* var[Eloc/t]              =   5.228135935979E-05 +/-   6.090564362631E-06
-* Correlation length       =   1.154514430724E+00
+* Acceptance ratio (%)     =  32.4635
+* Etot/t                   =  -2.307003128890E+02 +/-   1.673550513552E-04
+  > Ttot/t                 =  -1.036089108816E+01 +/-   2.904491294436E-03
+  > Utot/t                 =   3.903070053261E+00 +/-   2.908061332989E-03
+* var[Eloc/t]              =   1.395401086661E-04 +/-   1.092893958179E-04
+* Correlation length       =   1.027657875768E+00
+* log10 Psi^2 range: -6.1017492611957564 -- -3.3271333824003997
+* log10 Pgen range : -6.1017492611957564 -- -3.3271333824003997
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.487      0.508
+      2        0.483      0.499
+      3        0.512      0.487
+      4        0.521      0.495
+      5        0.492      0.510
+      6        0.505      0.501
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.036
+      1      4        1.076      1.497      3.482
+      2      4        0.154      0.854      1.106
+      3      4        0.076      0.410      0.549
+      4      4        0.222      2.155      1.870
+      5      4        0.113      1.083      0.956
 
 VDAGGER finished.
-Total VDAGGER walltime: 0.11s
+Total VDAGGER walltime: 0.31s
 
-Run ended: Wed  9 Jul 10:10:10 CEST 2025
+Run ended: Fri Sep 26 11:47:28 CEST 2025

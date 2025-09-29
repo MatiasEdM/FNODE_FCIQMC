@@ -1,0 +1,85 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -0.49699816072897973, optimizable ]
+  e-e term:
+    Range: 4
+    Parameters:
+      c_1,1: [ -0.12419919381289558, optimizable ]
+      c_1,2: [ -0.17384866774036226, optimizable ]
+      c_2,1: [ 5.1891313685473901E-002, optimizable ]
+      c_2,2: [ 3.9746428151207630E-002, optimizable ]
+      c_3,1: [ 8.4848491790206509E-002, optimizable ]
+      c_3,2: [ -6.0288273011103143E-003, optimizable ]
+      c_4,1: [ 2.0043047411178343E-002, optimizable ]
+      c_4,2: [ -3.1011491852621857E-002, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.29940686205122463, optimizable ]
+      c_2: [ -9.0135130639532920E-002, optimizable ]
+      c_3: [ -7.7572820293004885E-002, optimizable ]
+      c_4: [ 2.0001322475459549E-002, optimizable ]
+      c_5: [ 1.2892292108889336E-002, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: dx
+    Parameters:
+      c_1: [ 0.66913686170585907, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 8.7258276663192622E-002, optimizable ]
+      c_2: [ -5.9019816839177848E-002, optimizable ]
+      c_3: [ -5.4584382348020447E-002, optimizable ]
+      c_4: [ -1.5548800369302614E-002, optimizable ]
+      c_5: [ -1.5658887317723618E-002, optimizable ]
+  d-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 8.7696724872606435E-002, optimizable ]
+      c_2: [ -5.0799944681320083E-002, optimizable ]
+      c_3: [ -4.8382237052834336E-002, optimizable ]
+      c_4: [ -1.1541088344803198E-002, optimizable ]
+      c_5: [ -1.7142173247090307E-002, optimizable ]
+  e-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.21551622133203549, optimizable ]
+      c_2: [ -2.8640055333010079E-002, optimizable ]
+      c_3: [ -2.6270432198836992E-002, optimizable ]
+      c_4: [ 2.9260405695906776E-002, optimizable ]
+      c_5: [ 3.7830222000256167E-002, optimizable ]
+  e-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.19811205239457136, optimizable ]
+      c_2: [ -1.9579393445364392E-002, optimizable ]
+      c_3: [ -1.7492368772122426E-002, optimizable ]
+      c_4: [ 3.7630959857779991E-002, optimizable ]
+      c_5: [ 3.7964899015945477E-002, optimizable ]
+
+MULTIDETERMINANTS:
+  CSF 1:
+    c: [ 1.0000000000000000, fixed ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 2, 3 ], c: 1.0000000000000000 ]
+  CSF 2:
+    c: [ -1.5890805200998358E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 4 ], Spin 2: [ 1, 2, 4 ], c: 1.0000000000000000 ]
+  CSF 3:
+    c: [ -1.4709044725441468E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 5, 3 ], Spin 2: [ 1, 5, 3 ], c: 1.0000000000000000 ]
+  CSF 4:
+    c: [ 8.2877095905758997E-003, optimizable ]
+    Det 1: [ Spin 1: [ 1, 4, 3 ], Spin 2: [ 1, 2, 5 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 1, 2, 5 ], Spin 2: [ 1, 4, 3 ], c: 1.0000000000000000 ]
+  CSF 5:
+    c: [ -1.1267127236926852E-003, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 4, 5 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 1, 4, 5 ], Spin 2: [ 1, 2, 3 ], c: 1.0000000000000000 ]
+  CSF 6:
+    c: [ 4.1357532061162080E-005, optimizable ]
+    Det 1: [ Spin 1: [ 1, 6, 3 ], Spin 2: [ 5, 2, 3 ], c: 1.0000000000000000 ]
+    Det 2: [ Spin 1: [ 5, 2, 3 ], Spin 2: [ 1, 6, 3 ], c: 1.0000000000000000 ]

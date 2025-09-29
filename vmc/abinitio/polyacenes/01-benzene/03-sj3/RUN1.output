@@ -1,0 +1,626 @@
+Run started: Fri Sep 26 18:34:24 CEST 2025
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 128 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+General:
+  Random seed: timer
+
+Plan:
+  VMC-optimization:
+    Minimum cycles: 5
+    Convergence cycles: 3
+
+System:
+  Read Hamiltonian: FCIDUMP_loc_benzene
+  Read orbitals: LTSC_benzene
+  Complex orbitals: F
+  Geometry:
+    r_5: [ 0.00000000000000, 2.63994739601739 ]
+    r_4: [ 2.28626150960564, 1.31997369800870 ]
+    r_6: [ 2.28626150960564, -1.31997369800870 ]
+    r_2: [ 0.00000000000000, -2.63994739601739 ]
+    r_3: [ -2.28626150960564, -1.31997369800870 ]
+    r_1: [ -2.28626150960564, 1.31997369800870 ]
+
+VMC:
+  nstep: 500000
+  nconfig: 50000
+
+Optimization:
+  max_niter: 1
+
+Jastrow: wfn.casl
+
+Multideterminants: wfn.casl
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 1873951059 (from timer)
+
+* Loaded integrals for system with nelec=6, ms2=0, norb=6
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 6 (i) values
+  - U_iiii [opp] (local, 1-site): 6 (i) values
+  - U_kkii [opp] (local, 2-site): 30 contribs. from 6 (i) values
+  - U_kkii [par] (local, 2-site): 15 contribs. from 5 (i) values
+  - T_ji (single, 2-site): 30 contribs. from 6 (i) values
+  - U_kkji [opp] (single, 2/3-site): 180 contribs. from 30 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 150 contribs. from 30 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 900 contribs. from 30 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 170 contribs. from 20 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 255
+* Reading override orbitals from file "LTSC_benzene".
+* Site labels:
+  +-----+
+  |  5  |
+  |1   4|
+  |3   6|
+  |  2  |
+  +-----+
+* Automatically set Site kinds:
+  [ 1, 1, 1, 1, 1, 1 ]
+  +-----+
+  |  1  |
+  |1   1|
+  |1   1|
+  |  1  |
+  +-----+
+* Maximum Site kind: 1
+* Number of site-pair kinds with Tij=0: 0
+* Automatically set Site pair kinds:
+  Site 1: [ 0, 4, 1, -5, -1, -2 ]
+  Site 2: [ 4, 0, 1, -4, -3, -1 ]
+  Site 3: [ 1, 1, 0, -2, -4, -5 ]
+  Site 4: [ -5, -4, -2, 0, 1, 1 ]
+  Site 5: [ -1, -3, -4, 1, 0, 4 ]
+  Site 6: [ -2, -1, -5, 1, 4, 0 ]
+  For site 1 of kind 1:
+  +--------+
+  |   -1   |
+  | 0    -5|
+  | 1    -2|
+  |    4   |
+  +--------+
+* Maximum (unsigned) Site pair kind: 5
+General system setup:
+* Number of sites       : 6
+* Number of electrons   : 6
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 6
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Multideterminant parameter file: "wfn.casl"
+* Not using a backflow transformation
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.68382365778947
+    - Ttot/t = -10.304034143525278
+    - Utot/t = 3.8627023398836910
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  33.0809
+* Sample config after equilibration:
+  +-----+
+  |  d  |
+  |u   d|
+  |u   2|
+  |  0  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 2.19s]
+* Acceptance ratio (%)     =  32.9431
+* Etot/t                   =  -2.306837187659E+02 +/-   1.339767742977E-04
+  > Ttot/t                 =  -1.030410790112E+01 +/-   3.735722562987E-04
+  > Utot/t                 =   3.862880989335E+00 +/-   2.810088000121E-04
+* var[Eloc/t]              =   8.861852567822E-03 +/-   8.477539178125E-05
+* Correlation length       =   1.013727530374E+00
+* log10 Psi^2 range: -6.0557548630574676 -- -1.6893008980374524
+* log10 Pgen range : -6.0557548630574676 -- -1.6893008980374524
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.498      0.498
+      2        0.498      0.500
+      3        0.501      0.501
+      4        0.499      0.501
+      5        0.503      0.500
+      6        0.500      0.501
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          0.875
+      1      4        0.869      1.491      3.684
+      2      4        0.095      0.827      1.176
+      3      4        0.042      0.379      0.623
+      4      4        0.183      2.208      1.774
+      5      4        0.113      1.095      0.868
+
+Optimization #1:
+* Method          : lls
+* Target function : energy
+* No. of configs. : 50048
+* No. of params.  : 16
+* Before optimization:
+  -7.8279E-01   3.1727E-01  -2.3343E-01  -2.3507E-01  -5.6056E-02  -5.3380E-02
+  -4.8966E-02  -9.2881E-02   9.2187E-02   1.2817E-01   9.6342E-02   1.2120E-01
+   7.6836E-03  -1.3364E-03  -1.6347E-01  -1.6347E-01
+  > E    =  -2.306846443668E+02 +/-   4.238665257550E-04
+  > varE =   8.991765398699E-03
+* Computing derivatives.
+  Done. [total walltime: 1.06s]
+* Optimizing manipulation constant:
+  #igrid a___________ E____________________________________ varE____________
+     1     Infinity    -2.30684644E+02 +/-   4.23866526E-04   8.99176540E-03
+     2     1.0000E+06  -2.30684644E+02 +/-   4.23866317E-04   8.99175654E-03
+     3     2.1544E+05  -2.30684644E+02 +/-   4.23865556E-04   8.99172426E-03
+     4     4.6416E+04  -2.30684645E+02 +/-   4.23862025E-04   8.99157446E-03
+     5     1.0000E+04  -2.30684646E+02 +/-   4.23845638E-04   8.99087920E-03
+     6     2.1544E+03  -2.30684652E+02 +/-   4.23769593E-04   8.98765328E-03
+     7     4.6416E+02  -2.30684678E+02 +/-   4.23417058E-04   8.97270577E-03
+     8     1.0000E+02  -2.30684799E+02 +/-   4.21789961E-04   8.90387808E-03
+     9     2.1544E+01  -2.30685342E+02 +/-   4.14429701E-04   8.59584295E-03
+    10     4.6416E+00  -2.30687518E+02 +/-   3.83844951E-04   7.37391949E-03
+    11     1.0000E+00  -2.30693308E+02 +/-   2.89173840E-04   4.18508931E-03
+    12     2.1544E-01  -2.30698727E+02 +/-   1.54303597E-04   1.19162287E-03
+    13     4.6416E-02  -2.30699429E+02 +/-   1.20650356E-04   7.28524133E-04
+    14     1.0000E-02  -2.30699205E+02 +/-   1.27449836E-04   8.12952725E-04
+    15     2.1544E-03  -2.30699122E+02 +/-   1.30230362E-04   8.48811438E-04
+    16     4.6416E-04  -2.30699102E+02 +/-   1.30896273E-04   8.57514142E-04
+    17     1.0000E-04  -2.30699097E+02 +/-   1.31042891E-04   8.59436238E-04
+    18     2.1544E-05  -2.30699096E+02 +/-   1.31074626E-04   8.59852548E-04
+    19     4.6416E-06  -2.30699096E+02 +/-   1.31081470E-04   8.59942342E-04
+    20     1.0000E-06  -2.30699096E+02 +/-   1.31082945E-04   8.59961692E-04
+    21     0.0000E+00  -2.30699096E+02 +/-   1.31083350E-04   8.59967006E-04
+  ParMin   3.0805E-02  -2.30699363E+02 +/-   1.22415092E-04   7.49992040E-04
+  # Using grid point #13
+* Iteration # 1: E =  -2.306994286838E+02 +/-   1.206503560699E-04
+* Reached maximum number of iterations: exiting.
+* After optimization:
+  -8.2988E-01   2.9042E-01  -1.5292E-01  -7.6893E-02  -3.1798E-02  -3.4284E-02
+  -2.3809E-02  -1.0544E-01   8.3166E-02   7.1920E-02   1.6033E-01  -3.7340E-02
+   3.4613E-02  -6.6897E-02  -4.0115E-02  -8.3105E-02
+  > Energy =  -2.306994286838E+02 +/-   1.206503560699E-04
+  > varE =   7.285241333937E-04
+
+VMC #2:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69944141470984
+    - Ttot/t = -10.365540215840435
+    - Utot/t = 3.9085906552784837
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  40.6427
+* Sample config after equilibration:
+  +-----+
+  |  2  |
+  |0   0|
+  |2   2|
+  |  0  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.83s]
+* Acceptance ratio (%)     =  40.6559
+* Etot/t                   =  -2.306994774769E+02 +/-   3.768100883808E-05
+  > Ttot/t                 =  -1.036522397529E+01 +/-   2.961529849506E-04
+  > Utot/t                 =   3.908238352480E+00 +/-   2.975267064076E-04
+* var[Eloc/t]              =   7.222513598619E-04 +/-   3.368270053317E-06
+* Correlation length       =   9.838828766050E-01
+* log10 Psi^2 range: -5.9718000526642765 -- -2.0419518353465791
+* log10 Pgen range : -5.9718000526642765 -- -2.0419518353465791
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.499      0.501
+      2        0.502      0.500
+      3        0.498      0.500
+      4        0.498      0.500
+      5        0.501      0.501
+      6        0.502      0.497
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.042
+      1      4        1.074      1.494      3.497
+      2      4        0.159      0.842      1.092
+      3      4        0.079      0.423      0.553
+      4      4        0.231      2.162      1.885
+      5      4        0.119      1.079      0.932
+
+Optimization #2:
+* Method          : lls
+* Target function : energy
+* No. of configs. : 50048
+* No. of params.  : 16
+* Before optimization:
+  -8.2988E-01   2.9042E-01  -1.5292E-01  -7.6893E-02  -3.1798E-02  -3.4284E-02
+  -2.3809E-02  -1.0544E-01   8.3166E-02   7.1920E-02   1.6033E-01  -3.7340E-02
+   3.4613E-02  -6.6897E-02  -4.0115E-02  -8.3105E-02
+  > E    =  -2.306996118589E+02 +/-   1.199975949881E-04
+  > varE =   7.206623124411E-04
+* Computing derivatives.
+  Done. [total walltime: 1.07s]
+* Optimizing manipulation constant:
+  #igrid a___________ E____________________________________ varE____________
+     1     Infinity    -2.30699612E+02 +/-   1.19997595E-04   7.20662312E-04
+     2     1.0000E+06  -2.30699612E+02 +/-   1.19997581E-04   7.20662146E-04
+     3     2.1544E+05  -2.30699612E+02 +/-   1.19997531E-04   7.20661539E-04
+     4     4.6416E+04  -2.30699612E+02 +/-   1.19997296E-04   7.20658724E-04
+     5     1.0000E+04  -2.30699612E+02 +/-   1.19996209E-04   7.20645660E-04
+     6     2.1544E+03  -2.30699612E+02 +/-   1.19991163E-04   7.20585061E-04
+     7     4.6416E+02  -2.30699612E+02 +/-   1.19967814E-04   7.20304654E-04
+     8     1.0000E+02  -2.30699614E+02 +/-   1.19860914E-04   7.19021534E-04
+     9     2.1544E+01  -2.30699622E+02 +/-   1.19394349E-04   7.13434771E-04
+    10     4.6416E+00  -2.30699650E+02 +/-   1.17707709E-04   6.93420279E-04
+    11     1.0000E+00  -2.30699715E+02 +/-   1.14116763E-04   6.51756861E-04
+    12     2.1544E-01  -2.30699775E+02 +/-   1.11168713E-04   6.18517343E-04
+    13     4.6416E-02  -2.30699789E+02 +/-   1.10505131E-04   6.11155340E-04
+    14     1.0000E-02  -2.30699789E+02 +/-   1.10478263E-04   6.10858187E-04
+    15     2.1544E-03  -2.30699789E+02 +/-   1.10485090E-04   6.10933688E-04
+    16     4.6416E-04  -2.30699789E+02 +/-   1.10487284E-04   6.10957950E-04
+    17     1.0000E-04  -2.30699789E+02 +/-   1.10487791E-04   6.10963566E-04
+    18     2.1544E-05  -2.30699789E+02 +/-   1.10487903E-04   6.10964794E-04
+    19     4.6416E-06  -2.30699789E+02 +/-   1.10487927E-04   6.10965059E-04
+    20     1.0000E-06  -2.30699789E+02 +/-   1.10487932E-04   6.10965117E-04
+    21     0.0000E+00  -2.30699789E+02 +/-   1.10487933E-04   6.10965132E-04
+* Iteration # 1: E =  -2.306997893770E+02 +/-   1.104782626268E-04
+* Reached maximum number of iterations: exiting.
+* After optimization:
+  -7.7052E-01   2.7747E-01  -1.7139E-01  -1.1394E-01  -5.1475E-02  -4.4052E-02
+  -6.3486E-03  -1.2638E-01   1.0070E-01   6.0584E-02   2.4867E-01  -9.9772E-02
+   9.8632E-02  -9.3524E-02  -5.2441E-02  -8.8685E-02
+  > Energy =  -2.306997893770E+02 +/-   1.104782626268E-04
+  > varE =   6.108581870844E-04
+
+VMC #3:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69963824000860
+    - Ttot/t = -10.363818904582740
+    - Utot/t = 3.9066725187220035
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  40.4158
+* Sample config after equilibration:
+  +-----+
+  |  d  |
+  |2   u|
+  |0   d|
+  |  u  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.84s]
+* Acceptance ratio (%)     =  40.3385
+* Etot/t                   =  -2.306995951718E+02 +/-   3.675980573221E-05
+  > Ttot/t                 =  -1.036372423863E+01 +/-   2.958702807230E-04
+  > Utot/t                 =   3.906620920875E+00 +/-   2.939591410806E-04
+* var[Eloc/t]              =   6.778448773656E-04 +/-   6.441141983320E-05
+* Correlation length       =   9.977065510261E-01
+* log10 Psi^2 range: -6.0076005179294905 -- -1.9888084009356501
+* log10 Pgen range : -6.0076005179294905 -- -1.9888084009356501
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.502      0.497
+      2        0.498      0.499
+      3        0.501      0.502
+      4        0.502      0.499
+      5        0.498      0.500
+      6        0.500      0.502
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.036
+      1      4        1.066      1.478      3.521
+      2      4        0.152      0.841      1.110
+      3      4        0.076      0.417      0.553
+      4      4        0.233      2.174      1.851
+      5      4        0.115      1.089      0.930
+
+Optimization #3:
+* Method          : lls
+* Target function : energy
+* No. of configs. : 50048
+* No. of params.  : 16
+* Before optimization:
+  -7.7052E-01   2.7747E-01  -1.7139E-01  -1.1394E-01  -5.1475E-02  -4.4052E-02
+  -6.3486E-03  -1.2638E-01   1.0070E-01   6.0584E-02   2.4867E-01  -9.9772E-02
+   9.8632E-02  -9.3524E-02  -5.2441E-02  -8.8685E-02
+  > E    =  -2.306997361576E+02 +/-   1.100734739084E-04
+  > varE =   6.063900590572E-04
+* Computing derivatives.
+  Done. [total walltime: 1.08s]
+* Optimizing manipulation constant:
+  #igrid a___________ E____________________________________ varE____________
+     1     Infinity    -2.30699736E+02 +/-   1.10073474E-04   6.06390059E-04
+     2     1.0000E+06  -2.30699736E+02 +/-   1.10073474E-04   6.06390056E-04
+     3     2.1544E+05  -2.30699736E+02 +/-   1.10073473E-04   6.06390045E-04
+     4     4.6416E+04  -2.30699736E+02 +/-   1.10073468E-04   6.06389994E-04
+     5     1.0000E+04  -2.30699736E+02 +/-   1.10073447E-04   6.06389759E-04
+     6     2.1544E+03  -2.30699736E+02 +/-   1.10073347E-04   6.06388665E-04
+     7     4.6416E+02  -2.30699736E+02 +/-   1.10072888E-04   6.06383602E-04
+     8     1.0000E+02  -2.30699736E+02 +/-   1.10070777E-04   6.06360344E-04
+     9     2.1544E+01  -2.30699736E+02 +/-   1.10061426E-04   6.06257326E-04
+    10     4.6416E+00  -2.30699737E+02 +/-   1.10025392E-04   6.05860410E-04
+    11     1.0000E+00  -2.30699739E+02 +/-   1.09930959E-04   6.04820856E-04
+    12     2.1544E-01  -2.30699740E+02 +/-   1.09823982E-04   6.03644295E-04
+    13     4.6416E-02  -2.30699740E+02 +/-   1.09812662E-04   6.03519857E-04
+    14     1.0000E-02  -2.30699740E+02 +/-   1.09831222E-04   6.03723886E-04
+    15     2.1544E-03  -2.30699740E+02 +/-   1.09838262E-04   6.03801288E-04
+    16     4.6416E-04  -2.30699740E+02 +/-   1.09839975E-04   6.03820116E-04
+    17     1.0000E-04  -2.30699740E+02 +/-   1.09840354E-04   6.03824281E-04
+    18     2.1544E-05  -2.30699740E+02 +/-   1.09840436E-04   6.03825183E-04
+    19     4.6416E-06  -2.30699740E+02 +/-   1.09840453E-04   6.03825378E-04
+    20     1.0000E-06  -2.30699740E+02 +/-   1.09840457E-04   6.03825420E-04
+    21     0.0000E+00  -2.30699740E+02 +/-   1.09840458E-04   6.03825431E-04
+* Iteration # 1: E =  -2.306997402343E+02 +/-   1.098126616875E-04
+* Reached maximum number of iterations: exiting.
+* After optimization:
+  -7.6506E-01   2.7698E-01  -1.7389E-01  -1.1938E-01  -5.3359E-02  -4.4285E-02
+  -4.8732E-03  -1.2692E-01   1.0187E-01   6.1320E-02   2.5290E-01  -1.0257E-01
+   1.0099E-01  -9.3918E-02  -5.4071E-02  -8.6962E-02
+  > Energy =  -2.306997402343E+02 +/-   1.098126616875E-04
+  > varE =   6.035198567365E-04
+
+VMC #4:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69964156533544
+    - Ttot/t = -10.363786608215335
+    - Utot/t = 3.9066368970277718
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  40.4977
+* Sample config after equilibration:
+  +-----+
+  |  2  |
+  |0   d|
+  |u   u|
+  |  d  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.83s]
+* Acceptance ratio (%)     =  40.3408
+* Etot/t                   =  -2.306995937250E+02 +/-   3.432508221064E-05
+  > Ttot/t                 =  -1.036352524779E+01 +/-   2.907601435361E-04
+  > Utot/t                 =   3.906423376961E+00 +/-   2.877043907383E-04
+* var[Eloc/t]              =   5.974816726453E-04 +/-   6.809737100136E-06
+* Correlation length       =   9.869276377664E-01
+* log10 Psi^2 range: -6.0141296524465897 -- -1.9846826476779640
+* log10 Pgen range : -6.0141296524465897 -- -1.9846826476779640
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.500      0.500
+      2        0.499      0.502
+      3        0.500      0.503
+      4        0.501      0.500
+      5        0.500      0.498
+      6        0.500      0.497
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.033
+      1      4        1.061      1.477      3.526
+      2      4        0.152      0.838      1.109
+      3      4        0.075      0.423      0.555
+      4      4        0.236      2.176      1.850
+      5      4        0.118      1.087      0.925
+
+Optimization #4:
+* Method          : lls
+* Target function : energy
+* No. of configs. : 50048
+* No. of params.  : 16
+* Before optimization:
+  -7.6506E-01   2.7698E-01  -1.7389E-01  -1.1938E-01  -5.3359E-02  -4.4285E-02
+  -4.8732E-03  -1.2692E-01   1.0187E-01   6.1320E-02   2.5290E-01  -1.0257E-01
+   1.0099E-01  -9.3918E-02  -5.4071E-02  -8.6962E-02
+  > E    =  -2.306996639740E+02 +/-   1.084106777066E-04
+  > varE =   5.882078900417E-04
+* Computing derivatives.
+  Done. [total walltime: 1.07s]
+* Optimizing manipulation constant:
+  #igrid a___________ E____________________________________ varE____________
+     1     Infinity    -2.30699664E+02 +/-   1.08410678E-04   5.88207890E-04
+     2     1.0000E+06  -2.30699664E+02 +/-   1.08410678E-04   5.88207891E-04
+     3     2.1544E+05  -2.30699664E+02 +/-   1.08410678E-04   5.88207896E-04
+     4     4.6416E+04  -2.30699664E+02 +/-   1.08410680E-04   5.88207919E-04
+     5     1.0000E+04  -2.30699664E+02 +/-   1.08410690E-04   5.88208022E-04
+     6     2.1544E+03  -2.30699664E+02 +/-   1.08410734E-04   5.88208504E-04
+     7     4.6416E+02  -2.30699664E+02 +/-   1.08410940E-04   5.88210738E-04
+     8     1.0000E+02  -2.30699664E+02 +/-   1.08411894E-04   5.88221085E-04
+     9     2.1544E+01  -2.30699664E+02 +/-   1.08416263E-04   5.88268496E-04
+    10     4.6416E+00  -2.30699665E+02 +/-   1.08434961E-04   5.88471428E-04
+    11     1.0000E+00  -2.30699667E+02 +/-   1.08490459E-04   5.89073951E-04
+    12     2.1544E-01  -2.30699669E+02 +/-   1.08557905E-04   5.89806603E-04
+    13     4.6416E-02  -2.30699670E+02 +/-   1.08590701E-04   5.90163033E-04
+    14     1.0000E-02  -2.30699671E+02 +/-   1.08600261E-04   5.90266953E-04
+    15     2.1544E-03  -2.30699671E+02 +/-   1.08602505E-04   5.90291336E-04
+    16     4.6416E-04  -2.30699671E+02 +/-   1.08602998E-04   5.90296695E-04
+    17     1.0000E-04  -2.30699671E+02 +/-   1.08603104E-04   5.90297854E-04
+    18     2.1544E-05  -2.30699671E+02 +/-   1.08603127E-04   5.90298104E-04
+    19     4.6416E-06  -2.30699671E+02 +/-   1.08603132E-04   5.90298158E-04
+    20     1.0000E-06  -2.30699671E+02 +/-   1.08603133E-04   5.90298170E-04
+    21     0.0000E+00  -2.30699671E+02 +/-   1.08603133E-04   5.90298173E-04
+* Iteration # 1: E =  -2.306996707075E+02 +/-   1.086031334897E-04
+* Reached maximum number of iterations: exiting.
+* After optimization:
+  -7.5609E-01   2.7596E-01  -1.7658E-01  -1.1854E-01  -5.4435E-02  -4.5991E-02
+  -6.0310E-03  -1.2373E-01   1.0193E-01   6.4666E-02   2.4617E-01  -9.5962E-02
+   9.7295E-02  -8.9079E-02  -5.2402E-02  -8.5886E-02
+  > Energy =  -2.306996707075E+02 +/-   1.086031334897E-04
+  > varE =   5.902981729384E-04
+
+VMC #5:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69964169985491
+    - Ttot/t = -10.363963098049439
+    - Utot/t = 3.9068132523424097
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  40.3517
+* Sample config after equilibration:
+  +-----+
+  |  0  |
+  |2   u|
+  |d   u|
+  |  d  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.84s]
+* Acceptance ratio (%)     =  40.3727
+* Etot/t                   =  -2.306996374475E+02 +/-   3.558039641409E-05
+  > Ttot/t                 =  -1.036380047784E+01 +/-   2.928834636268E-04
+  > Utot/t                 =   3.906654884416E+00 +/-   2.900593087506E-04
+* var[Eloc/t]              =   6.135656622517E-04 +/-   4.687284988659E-06
+* Correlation length       =   1.032635961372E+00
+* log10 Psi^2 range: -5.9939517477832220 -- -1.9714769716690550
+* log10 Pgen range : -5.9939517477832220 -- -1.9714769716690550
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.504      0.498
+      2        0.499      0.500
+      3        0.500      0.500
+      4        0.496      0.502
+      5        0.498      0.500
+      6        0.503      0.499
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.038
+      1      4        1.071      1.482      3.512
+      2      4        0.154      0.843      1.105
+      3      4        0.075      0.420      0.553
+      4      4        0.230      2.171      1.860
+      5      4        0.118      1.084      0.932
+
+Optimization #5:
+* Method          : lls
+* Target function : energy
+* No. of configs. : 50048
+* No. of params.  : 16
+* Before optimization:
+  -7.5609E-01   2.7596E-01  -1.7658E-01  -1.1854E-01  -5.4435E-02  -4.5991E-02
+  -6.0310E-03  -1.2373E-01   1.0193E-01   6.4666E-02   2.4617E-01  -9.5962E-02
+   9.7295E-02  -8.9079E-02  -5.2402E-02  -8.5886E-02
+  > E    =  -2.306995000978E+02 +/-   1.089673656582E-04
+  > varE =   5.942642854903E-04
+* Computing derivatives.
+  Done. [total walltime: 1.08s]
+* Optimizing manipulation constant:
+  #igrid a___________ E____________________________________ varE____________
+     1     Infinity    -2.30699500E+02 +/-   1.08967366E-04   5.94264285E-04
+     2     1.0000E+06  -2.30699500E+02 +/-   1.08967365E-04   5.94264281E-04
+     3     2.1544E+05  -2.30699500E+02 +/-   1.08967364E-04   5.94264265E-04
+     4     4.6416E+04  -2.30699500E+02 +/-   1.08967357E-04   5.94264189E-04
+     5     1.0000E+04  -2.30699500E+02 +/-   1.08967325E-04   5.94263840E-04
+     6     2.1544E+03  -2.30699500E+02 +/-   1.08967176E-04   5.94262217E-04
+     7     4.6416E+02  -2.30699500E+02 +/-   1.08966487E-04   5.94254702E-04
+     8     1.0000E+02  -2.30699500E+02 +/-   1.08963319E-04   5.94220151E-04
+     9     2.1544E+01  -2.30699500E+02 +/-   1.08949242E-04   5.94066619E-04
+    10     4.6416E+00  -2.30699499E+02 +/-   1.08895252E-04   5.93477983E-04
+    11     1.0000E+00  -2.30699496E+02 +/-   1.08774037E-04   5.92157482E-04
+    12     2.1544E-01  -2.30699493E+02 +/-   1.08738855E-04   5.91774484E-04
+    13     4.6416E-02  -2.30699488E+02 +/-   1.08900678E-04   5.93537133E-04
+    14     1.0000E-02  -2.30699486E+02 +/-   1.09021034E-04   5.94849804E-04
+    15     2.1544E-03  -2.30699485E+02 +/-   1.09057877E-04   5.95251920E-04
+    16     4.6416E-04  -2.30699485E+02 +/-   1.09066500E-04   5.95346057E-04
+    17     1.0000E-04  -2.30699485E+02 +/-   1.09068392E-04   5.95366712E-04
+    18     2.1544E-05  -2.30699485E+02 +/-   1.09068801E-04   5.95371180E-04
+    19     4.6416E-06  -2.30699485E+02 +/-   1.09068890E-04   5.95372143E-04
+    20     1.0000E-06  -2.30699485E+02 +/-   1.09068909E-04   5.95372351E-04
+    21     0.0000E+00  -2.30699485E+02 +/-   1.09068914E-04   5.95372408E-04
+* Iteration # 1: E =  -2.306995000978E+02 +/-   1.089673656582E-04
+* Reached maximum number of iterations: exiting.
+* After optimization:
+  -7.5609E-01   2.7596E-01  -1.7658E-01  -1.1854E-01  -5.4435E-02  -4.5991E-02
+  -6.0310E-03  -1.2373E-01   1.0193E-01   6.4666E-02   2.4617E-01  -9.5962E-02
+   9.7295E-02  -8.9079E-02  -5.2402E-02  -8.5886E-02
+  > Energy =  -2.306995000978E+02 +/-   1.089673656582E-04
+  > varE =   5.942642854903E-04
+
+VMC #6:
+* Size of Hilbert space =   4.0000E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -230.69964169985491
+    - Ttot/t = -10.363963098049439
+    - Utot/t = 3.9068132523424097
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.01s]
+* Equil. acc.ratio (%)     =  40.3701
+* Sample config after equilibration:
+  +-----+
+  |  d  |
+  |u   u|
+  |u   d|
+  |  d  |
+  +-----+
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 1.83s]
+* Acceptance ratio (%)     =  40.3767
+* Etot/t                   =  -2.306996001255E+02 +/-   3.486701760774E-05
+  > Ttot/t                 =  -1.036375374773E+01 +/-   2.972218973734E-04
+  > Utot/t                 =   3.906645476356E+00 +/-   2.946462700881E-04
+* var[Eloc/t]              =   6.052707545106E-04 +/-   5.538947527603E-06
+* Correlation length       =   1.005232772565E+00
+* log10 Psi^2 range: -5.9939517577821784 -- -1.9714788784193449
+* log10 Pgen range : -5.9939517577821784 -- -1.9714788784193449
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.502      0.507
+      2        0.498      0.502
+      3        0.499      0.495
+      4        0.502      0.499
+      5        0.499      0.498
+      6        0.500      0.500
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          1.029
+      1      4        1.058      1.478      3.528
+      2      4        0.153      0.842      1.107
+      3      4        0.074      0.422      0.552
+      4      4        0.232      2.170      1.856
+      5      4        0.117      1.087      0.929
+
+VDAGGER finished.
+Total VDAGGER walltime: 37.4s
+
+Run ended: Fri Sep 26 18:35:31 CEST 2025
