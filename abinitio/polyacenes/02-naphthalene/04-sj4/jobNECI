@@ -1,0 +1,58 @@
+#!/bin/bash
+
+## STANDARD OUTPUT AND ERROR: ---------------
+
+#SBATCH -o ./jobNECI.out.%j 
+#SBATCH -e ./jobNECI.err.%j
+
+## INITIAL WORKING DIRECTORY ---------------
+
+#SBATCH -D ./
+
+## JOB NAME ---------------------------------
+
+#SBATCH -J n[04-sj4]
+
+## NUMBER OF NODES AND MPI TASKS PER NODE --
+
+#SBATCH --exclusive
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=128
+#SBATCH --cores-per-socket=64
+#SBATCH --sockets-per-node=2
+#SBATCH --mem=0
+
+## WALL CLOCK LIMIT ------------------------
+
+#SBATCH --time=1-00:00:00
+#SBATCH --partition=gen3.24h
+
+## MODULE LOADING --------------------------
+
+module purge
+
+module load gnu-openmpi/3.1.6
+
+## SET-UP PREAMBLE -------------------------
+
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+
+ulimit -s unlimited
+
+## NECI RUN --------------------------------
+
+mpirun /home/dimauro/neci/build_gnu3.1.6_fkf_cluster_amdlogin2/bin/neci  NECI.in >> NECI.out 2>>NECI.err
+
+## POST-PROCESSING -------------------------
+
+numiter=50000
+
+gnuplot /home/dimauro/utils/mcstats/plot_fcimcstats.plt
+
+/home/dimauro/neci/utils/blocking.py -p 'plots/blocking-Shift.png'       -f ${numiter} -d1 FCIMCStats > stats-Shift
+/home/dimauro/neci/utils/blocking.py -p 'plots/blocking-FNProjET.png'    -f ${numiter} -d5 -d6 -o/ FIXEDNODEStats > stats-FNProjET
+
+tail -n 50 NECI.err > err
+rm         NECI.err jobNECI.*

@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH -J vd[n=2]
+#SBATCH -o output
+#SBATCH --mem=0
+#SBATCH --nodes=4
+#SBATCH --ntasks=128
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-core=1
+#SBATCH --time=1-00:00:00
+#SBATCH --partition=gen3.24h
+
+ulimit -s unlimited 2> /dev/null
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export GOTO_NUM_THREADS=1
+export BLAS_NUM_THREADS=1
+export ATLAS_NUM_THREADS=1
+export MODULEPATH='' ;       . /etc/profile.d/modules.sh ;       export MODULEPATH="$MODULEPATH:/usr/local/server/IntelOneApi2023/modulefiles" ;       module purge >& /dev/null ;       module load compiler/2023.0.0 mpi/2021.8.0 >& /dev/null
+export FI_PROVIDER=sockets ;            export SLURM_MPI_TYPE=pmi2
+echo "Run started: $(date)"
+echo "Using VDAGGER_ARCH = intel23_fkfamd23_cluster"
+echo "Running 1x128 MPI processes."
+echo
+srun /home/dimauro/vdagger/build_intel23_fkfamd23_cluster_main_opt/bin/vdagger "input.casl"
+echo
+echo "Run ended: $(date)"
+rm -f ".vdagger.lock"

@@ -1,0 +1,14 @@
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+System:
+  Read Hamiltonian: FCIDUMP_loc_naphthalene
+  Read orbitals: LTSC_naphthalene
+  Complex orbitals: F
+VMC:
+  nstep: 500000
+  nconfig: 50000
+Jastrow: wfn.casl
+Multideterminants: wfn.casl
+Jastrow dump: jastrow.dat
+Multideterminant dump: mdet.dat

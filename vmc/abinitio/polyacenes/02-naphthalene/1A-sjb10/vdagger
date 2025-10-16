@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH -J 1A-sjb10
+#SBATCH -o output
+#SBATCH --mem=0
+#SBATCH --nodes=2
+#SBATCH --ntasks=128
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-core=1
+#SBATCH --time=2-00:00:00
+#SBATCH --partition=p.48h.big
+
+ulimit -s unlimited 2> /dev/null
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export GOTO_NUM_THREADS=1
+export BLAS_NUM_THREADS=1
+export ATLAS_NUM_THREADS=1
+export MODULEPATH='' ;       . /etc/profile.d/modules.sh ; module purge ; module load gnu-openmpi ;       export OMPI_MCA_mpi_warn_on_fork=0
+export SLURM_MPI_TYPE=pmix
+echo "Run started: $(date)"
+echo "Using VDAGGER_ARCH = gnu7_fkfamd_cluster"
+echo "Running 1x128 MPI processes."
+echo
+srun /home/dimauro/vdagger/build_gnu7_fkfamd_cluster_main_opt/bin/vdagger "input.casl"
+echo
+echo "Run ended: $(date)"
+rm -f ".vdagger.lock"

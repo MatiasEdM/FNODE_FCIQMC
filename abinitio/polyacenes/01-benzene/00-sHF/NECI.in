@@ -1,0 +1,90 @@
+TITLE
+
+SYSTEM read
+
+	electrons            6
+	spin-restrict        0
+	sym                  0 0 0 0
+        ignore-fcidump-header
+	nonUniformRandExcits PCHB LOCALISED
+ENDSYS
+
+CALC
+
+	nmcyc               254800
+	seed                -7
+	load-balance-blocks OFF
+
+
+	# METHODS BLOCK ----------------------------------------------
+
+	  METHODS
+		  method VERTEX FCIMC
+  	  ENDMETHODS
+
+	# ------------------------------------------------------------
+
+	# POPULATION CONTROL OPTIONS ---------------------------------
+
+	  totalwalkers 1E6
+	  shiftDamp    0.5
+	  stepsshift   100
+
+	# ------------------------------------------------------------
+
+	# REAL WALKER COEFFICIENTS OPTIONS ---------------------------
+
+	  allRealCoeff
+	  realSpawnCutOff 0.01
+
+        # ------------------------------------------------------------
+
+	# TIME-STEP OPTIONS ------------------------------------------
+
+	  tau-values \
+                  start user-defined 0.001      \
+                  ignore-diagonal-estimate
+
+        # ------------------------------------------------------------
+
+	# WAVE FUNCTION INITIALIZATION OPTIONS -----------------------
+
+	  walkContGrow
+	  defineDet       2   4   5   8   9  11 
+	  startSinglePart 1000
+	  no-changeRef
+
+        # ------------------------------------------------------------
+  
+        # TRIAL WAVE FUNCTION (PROJ. ENERGY) OPTIONS -----------------
+
+        # ------------------------------------------------------------
+
+        # P/Q PARTITION FIXED-NODE APPROXIMATION OPTIONS -------------
+
+           fixed-node \
+            overlap-filename    LTSC.mat       \
+            trial-wfn-filename  mdet.dat       \
+	    reference-filename  fci-core.dat   \
+            trial-proj-energy   trialspace.dat \
+            time-reversal-init                 \
+            calc-trial-energy                  \
+            calc-sign-flip-potential
+
+        # ------------------------------------------------------------
+
+	# MEMORY OPTIONS ---------------------------------------------
+
+	  memoryFacPart   500.0
+          memoryFacSpawn  500.0
+
+        # ------------------------------------------------------------
+
+ENDCALC
+
+LOGGING
+	hdf5-pops
+	highlyPopWrite 100000
+ENDLOG
+
+END
