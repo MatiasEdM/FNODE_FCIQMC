@@ -1,0 +1,19 @@
+General:
+   Random seed: timer
+Plan:
+  VMC-optimization:
+    Minimum cycles: 3
+    Convergence cycles: 3
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+VMC:
+  nstep: 500000
+  nconfig: 100000
+  Report density: T
+  Report pair correlation: T
+Optimization:
+   max_niter: 1
+Jastrow: wfn.casl
+Backflow: wfn.casl
