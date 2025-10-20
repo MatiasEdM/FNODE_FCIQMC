@@ -2,12 +2,12 @@
 #SBATCH -J 06-sj6
 #SBATCH -o output
 #SBATCH --mem=0
-#SBATCH --nodes=2
+#SBATCH --nodes=4
 #SBATCH --ntasks=128
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=2-00:00:00
-#SBATCH --partition=p.new.48h.big
+#SBATCH --partition=p.48h
 
 ulimit -s unlimited 2> /dev/null
 export OMP_NUM_THREADS=1

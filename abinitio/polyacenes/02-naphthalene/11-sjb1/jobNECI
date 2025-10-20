@@ -25,7 +25,7 @@
 ## WALL CLOCK LIMIT ------------------------
 
 #SBATCH --time=1-00:00:00
-#SBATCH --partition=gen3.24h
+#SBATCH --partition=p.24h
 
 ## MODULE LOADING --------------------------
 
@@ -43,7 +43,7 @@ ulimit -s unlimited
 
 ## NECI RUN --------------------------------
 
-mpirun /home/dimauro/neci/build_gnu3.1.6_fkf_cluster_amdlogin2/bin/neci  NECI.in >> NECI.out 2>>NECI.err
+srun --mpi=pmix /home/dimauro/neci/build_gnu3.1.6_fkf_cluster_amdlogin1/bin/neci < NECI.in >> NECI.out 2>>NECI.err
 
 ## POST-PROCESSING -------------------------
 
