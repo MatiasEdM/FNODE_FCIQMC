@@ -1,0 +1,43 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -0.944929788583613, optimizable ]
+  e-e term:
+    Range: 4
+    Parameters:
+      c_1,1: [ -0.126302634141600, optimizable ]
+      c_1,2: [ -0.133246992191417, optimizable ]
+      c_2,1: [ 7.696724299443275E-002, optimizable ]
+      c_2,2: [ 2.962896131478138E-002, optimizable ]
+      c_3,1: [ 0.155156534222742, optimizable ]
+      c_3,2: [ -5.418695297275878E-002, optimizable ]
+      c_4,1: [ 4.957843737436561E-002, optimizable ]
+      c_4,2: [ -5.138681179328575E-002, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.297894906782897, optimizable ]
+      c_2: [ -0.103687326823972, optimizable ]
+      c_3: [ -7.327020506661221E-002, optimizable ]
+      c_4: [ -1.599680282634777E-002, optimizable ]
+      c_5: [ -1.309949631882409E-002, optimizable ]
+  Term mode: site centric
+
+MULTIDETERMINANTS:
+  CSF 1:
+    c: [ 1.00000000000000, fixed ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 2, 3 ], c: 1.00000000000000 ]
+  CSF 2:
+    c: [ -6.916320279157118E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 4 ], Spin 2: [ 1, 2, 4 ], c: 1.00000000000000 ]
+  CSF 3:
+    c: [ -8.754765013885066E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 5, 3 ], Spin 2: [ 1, 5, 3 ], c: 1.00000000000000 ]
+  CSF 4:
+    c: [ 3.981850874485834E-002, optimizable ]
+    Det 1: [ Spin 1: [ 1, 4, 3 ], Spin 2: [ 1, 2, 5 ], c: 1.00000000000000 ]
+    Det 2: [ Spin 1: [ 1, 2, 5 ], Spin 2: [ 1, 4, 3 ], c: 1.00000000000000 ]
+  CSF 5:
+    c: [ 1.021401506588337E-003, optimizable ]
+    Det 1: [ Spin 1: [ 1, 2, 3 ], Spin 2: [ 1, 4, 5 ], c: 1.00000000000000 ]
+    Det 2: [ Spin 1: [ 1, 4, 5 ], Spin 2: [ 1, 2, 3 ], c: 1.00000000000000 ]

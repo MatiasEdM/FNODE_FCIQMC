@@ -1,5 +1,5 @@
-Run started: Fri Sep 26 11:46:58 CEST 2025
-Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Run started: Tue 21 Oct 2025 07:20:20 AM CEST
+Using VDAGGER_ARCH = intel23_fkfamd23_cluster
 Running 1x128 MPI processes.
 
                                xx
@@ -57,7 +57,7 @@ Backflow dump: backflow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 1872069606 (from timer)
+* Random seed: 904244973 (from timer)
 
 * Loaded integrals for system with nelec=6, ms2=0, norb=6
 * INFO: setting number of electrons from integrals file.
@@ -125,49 +125,49 @@ Trial wave function setup:
 VMC #1:
 * Size of Hilbert space =   4.0000E+02
 * Deterministic energy evaluation:
-  > Deterministic Etot/t = -230.70021468708336
-    - Ttot/t = -10.363253044214074
-    - Utot/t = 3.9055302112785739
+  > Deterministic Etot/t = -230.7002159730101
+    - Ttot/t = -10.36312893904031
+    - Utot/t = 3.905404820178084
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
-  Done. [total walltime: 0.03s]
-* Equil. acc.ratio (%)     =  32.5285
+  Done. [total walltime: 0.02s]
+* Equil. acc.ratio (%)     =  37.5725
 * Sample config after equilibration:
   +-----+
-  |  0  |
-  |2   u|
+  |  u  |
+  |d   u|
   |u   d|
   |  d  |
   +-----+
 * Number of accum. steps   = 5120 x 10
 * Running VMC accumulation.
-  Done. [total walltime: 0.03s]
-* Acceptance ratio (%)     =  32.4635
-* Etot/t                   =  -2.307003128890E+02 +/-   1.673550513552E-04
-  > Ttot/t                 =  -1.036089108816E+01 +/-   2.904491294436E-03
-  > Utot/t                 =   3.903070053261E+00 +/-   2.908061332989E-03
-* var[Eloc/t]              =   1.395401086661E-04 +/-   1.092893958179E-04
-* Correlation length       =   1.027657875768E+00
-* log10 Psi^2 range: -6.1017492611957564 -- -3.3271333824003997
-* log10 Pgen range : -6.1017492611957564 -- -3.3271333824003997
+  Done. [total walltime: 0.02s]
+* Acceptance ratio (%)     =  37.3503
+* Etot/t                   =  -2.307002013420E+02 +/-   8.101795427374E-05
+  > Ttot/t                 =  -1.036623952267E+01 +/-   3.036891723442E-03
+  > Utot/t                 =   3.908530034842E+00 +/-   3.047408214136E-03
+* var[Eloc/t]              =   3.746540833841E-05 +/-   3.459035036473E-06
+* Correlation length       =   8.970198146436E-01
+* log10 Psi^2 range: -6.255020882739380 -- -3.490647006365548
+* log10 Pgen range : -6.255020882739380 -- -3.490647006365548
 * Site occupation (ave. no. electrons per config.):
   > Site_  ___eu____  ___ed____
-      1        0.487      0.508
-      2        0.483      0.499
-      3        0.512      0.487
-      4        0.521      0.495
-      5        0.492      0.510
-      6        0.505      0.501
+      1        0.479      0.495
+      2        0.508      0.500
+      3        0.495      0.507
+      4        0.500      0.509
+      5        0.505      0.506
+      6        0.514      0.483
 * Pair-correlation analysis (ave. no. pairs per config.):
   > Shell  nsite  ___dh____  __eueu___  __eued___
-      0      1        0          0          1.036
-      1      4        1.076      1.497      3.482
-      2      4        0.154      0.854      1.106
-      3      4        0.076      0.410      0.549
-      4      4        0.222      2.155      1.870
-      5      4        0.113      1.083      0.956
+      0      1        0          0          1.034
+      1      4        1.085      1.465      3.521
+      2      4        0.158      0.822      1.106
+      3      4        0.077      0.418      0.578
+      4      4        0.234      2.211      1.845
+      5      4        0.108      1.084      0.916
 
 VDAGGER finished.
-Total VDAGGER walltime: 0.31s
+Total VDAGGER walltime: 0.09s
 
-Run ended: Fri Sep 26 11:47:28 CEST 2025
+Run ended: Tue 21 Oct 2025 07:20:25 AM CEST

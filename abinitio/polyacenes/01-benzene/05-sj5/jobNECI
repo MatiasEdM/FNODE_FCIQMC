@@ -16,7 +16,7 @@
 ## NUMBER OF NODES AND MPI TASKS PER NODE --
 
 #SBATCH --exclusive
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --cores-per-socket=64
 #SBATCH --sockets-per-node=2

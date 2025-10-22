@@ -11,8 +11,7 @@ ENDSYS
 
 CALC
 
-	readPops
-	nmcyc               15300
+	nmcyc               254800
 	seed                -7
 	load-balance-blocks OFF
 
@@ -44,9 +43,7 @@ CALC
 
 	  tau-values \
                   start user-defined 0.001      \
-                  ignore-diagonal-estimate      \
-                  readpops-but-tau-not-from-popsfile
-                  
+                  ignore-diagonal-estimate
 
         # ------------------------------------------------------------
 
@@ -54,6 +51,7 @@ CALC
 
 	  walkContGrow
 	  defineDet       2   4   5   8   9  11 
+	  startSinglePart 1000
 	  no-changeRef
 
         # ------------------------------------------------------------

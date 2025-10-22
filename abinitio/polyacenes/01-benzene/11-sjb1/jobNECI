@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 
 ## STANDARD OUTPUT AND ERROR: ---------------
 
@@ -11,7 +11,7 @@
 
 ## JOB NAME ---------------------------------
 
-#SBATCH -J bn(sjb)
+#SBATCH -J b[11-sjb1]
 
 ## NUMBER OF NODES AND MPI TASKS PER NODE --
 
@@ -25,11 +25,7 @@
 ## WALL CLOCK LIMIT ------------------------
 
 #SBATCH --time=1-00:00:00
-#SBATCH --partition=gen3.24h
-
-## NETWORK TYPE ----------------------------
-
-##SBATCH --network DEVTYPE=IB
+#SBATCH --partition=gen2.24h
 
 ## MODULE LOADING --------------------------
 
@@ -58,5 +54,5 @@ gnuplot /home/dimauro/utils/mcstats/plot_fcimcstats.plt
 /home/dimauro/neci/utils/blocking.py -p 'plots/blocking-Shift.png'       -f ${numiter} -d1 FCIMCStats > stats-Shift
 /home/dimauro/neci/utils/blocking.py -p 'plots/blocking-FNProjET.png'    -f ${numiter} -d5 -d6 -o/ FIXEDNODEStats > stats-FNProjET
 
-tail -n 50 NECI.err > err 
-rm   NECI.err jobNECI.*
+tail -n 50 NECI.err > err
+rm         NECI.err jobNECI.*
