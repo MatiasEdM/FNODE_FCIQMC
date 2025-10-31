@@ -1,0 +1,1 @@
+/home/dimauro/utils/trial_wave_function/twfn_generator/TWFC.x

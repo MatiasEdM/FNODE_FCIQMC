@@ -1,0 +1,1 @@
+/home/dimauro/utils/sign_structure/fixed-node_sign-structure/v2/sgnstr.x
