@@ -1,0 +1,16 @@
+General:
+   Random seed: timer
+Plan:
+  VMC-optimization:
+    Minimum cycles: 5
+    Convergence cycles: 3
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+VMC:
+  nstep: 500000
+  nconfig: 100000
+Optimization:
+   max_niter: 1
+Jastrow: wfn.casl

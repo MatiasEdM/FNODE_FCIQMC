@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH -J vd[cn-sj]
+#SBATCH -J vd[cn-new]
 #SBATCH -o output
 #SBATCH --mem=0
 #SBATCH --nodes=8
-#SBATCH --ntasks=128
+#SBATCH --ntasks=1024
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=24:00:00
