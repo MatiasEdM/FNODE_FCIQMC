@@ -1,0 +1,187 @@
+Run started: Sun Nov  9 21:49:53 CET 2025
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 128 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+
+VMC:
+  nstep: 500000
+  nconfig: 50000
+  Report density: T
+  Report pair correlation: T
+  Sampling distribution: [ Psi^2+offset, log offset: -51.5 ]
+
+Optimization:
+  max_niter: 10
+
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+Jastrow: wfn.casl
+
+Backflow: wfn.casl
+
+Multideterminants: wfn.casl
+
+Jastrow dump: jastrow.dat
+
+Backflow dump: backflow.dat
+
+Multideterminant dump: trial_wfn.dat
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 1400014808 (from timer)
+
+* Loaded integrals for system with nelec=10, ms2=0, norb=7
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 7 (i) values
+  - U_iiii [opp] (local, 1-site): 7 (i) values
+  - U_kkii [opp] (local, 2-site): 42 contribs. from 7 (i) values
+  - U_kkii [par] (local, 2-site): 21 contribs. from 6 (i) values
+  - T_ji (single, 2-site): 42 contribs. from 7 (i) values
+  - U_kkji [opp] (single, 2/3-site): 294 contribs. from 42 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 252 contribs. from 42 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 1764 contribs. from 42 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 350 contribs. from 30 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 438
+* Reading override orbitals from file "LTSC.mat".
+* Site labels:
+  [draw_int: system geometry not defined]
+* Automatically set Site kinds:
+  [ 1, 2, 3, 4, 5, 6, 7 ]
+  [draw_int: system geometry not defined]
+* Maximum Site kind: 7
+* Number of site-pair kinds with Tij=0: 0
+* Automatically set Site pair kinds:
+  Site 1: [ 0, -6, -13, 11, 1, -5, 20 ]
+  Site 2: [ -6, 0, -14, -10, 4, -17, 8 ]
+  Site 3: [ -13, -14, 0, -21, 3, 12, -9 ]
+  Site 4: [ 11, -10, -21, 0, 18, -16, -15 ]
+  Site 5: [ 1, 4, 3, 18, 0, 2, -19 ]
+  Site 6: [ -5, -17, 12, -16, 2, 0, -7 ]
+  Site 7: [ 20, 8, -9, -15, -19, -7, 0 ]
+  For site 1 of kind 1:
+  [draw_int: system geometry not defined]
+  For site 2 of kind 2:
+  [draw_int: system geometry not defined]
+  For site 3 of kind 3:
+  [draw_int: system geometry not defined]
+  For site 4 of kind 4:
+  [draw_int: system geometry not defined]
+  For site 5 of kind 5:
+  [draw_int: system geometry not defined]
+  For site 6 of kind 6:
+  [draw_int: system geometry not defined]
+  For site 7 of kind 7:
+  [draw_int: system geometry not defined]
+* Maximum (unsigned) Site pair kind: 21
+General system setup:
+* Number of sites       : 7
+* Number of electrons   : 10
+* Spin imbalance MS2    : 0
+* Filling               : 0.714286
+* Number of orbitals in pool: 7
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Writing full Jastrow parameter lists to "jastrow.dat".
+* Multideterminant parameter file: "wfn.casl"
+* Writing multideterminant information to "trial_wfn.dat".
+* Backflow parameter file: "wfn.casl"
+* Writing full backflow parameter lists to "backflow.dat".
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   4.4100E+02
+* Deterministic energy evaluation:
+  > Deterministic Etot/t = -1656.0237442116240
+    - Ttot/t = -119.42733263003959
+    - Utot/t = 34.160122773060394
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.13s]
+* Equil. acc.ratio (%)     =  50.2197
+* Sample config after equilibration:
+  [draw: system geometry not defined]
+* Number of accum. steps   = 500480 x 10
+* Running VMC accumulation.
+  Done. [total walltime: 7.31s]
+* Acceptance ratio (%)     =  50.2324
+* Etot/t                   =  -1.656023820702E+03 +/-   3.173766695926E-05
+  > Ttot/t                 =  -1.194267034808E+02 +/-   5.084776950886E-03
+  > Utot/t                 =   3.415941713669E+01 +/-   5.073793431458E-03
+* var[Eloc/t]              =   5.630926076278E-03 +/-   6.084368725908E-05
+* Correlation length       =   8.952759090448E-02
+* log10 Psi^2 range: -103.02928179358936 -- -49.643017796461614
+* log10 Pgen range : -51.499999999999993 -- -49.637022632330456
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.588      0.583
+      2        0.571      0.573
+      3        0.888      0.889
+      4        0.886      0.886
+      5        0.929      0.930
+      6        0.578      0.579
+      7        0.559      0.560
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          3.792
+      1      0        0.180      1.054      1.071
+      2      0        0.187      1.040      1.056
+      3      0        0.028      1.659      1.676
+      4      0        0.191      1.028      1.045
+      5      0        0.220      0.500      0.692
+      6      0        0.221      0.494      0.682
+      7      0        0.219      0.474      0.666
+      8      0        0.220      0.465      0.657
+      9      0        0.201      0.926      0.977
+     10      0        0.191      0.945      1.001
+     11      0        0.178      0.974      1.026
+     12      0        0.185      0.961      1.014
+     13      0        0.165      1.004      1.026
+     14      0        0.173      0.982      1.004
+     15      0        0.186      0.951      0.976
+     16      0        0.171      0.990      1.009
+     17      0        0.112      0.665      0.676
+     18      0        0.027      1.656      1.672
+     19      0        0.203      1.002      1.019
+     20      0        0.114      0.659      0.669
+     21      0        0.027      1.574      1.591
+
+VDAGGER finished.
+Total VDAGGER walltime: 8.38s
+
+Run ended: Sun Nov  9 21:50:31 CET 2025

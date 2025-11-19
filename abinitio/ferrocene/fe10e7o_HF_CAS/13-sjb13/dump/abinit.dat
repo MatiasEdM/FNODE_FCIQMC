@@ -1,0 +1,87 @@
+================================================================================
+                         Initializing the Hilbert Space                         
+================================================================================
+Number of basis functions (spin orb.) = 14
+Number of electrons = 10
+Number of determinants = 441
+Reading the determinants from file: DETSPACE
+    Skipping the first 3 lines.
+Debugging info: first 10 determinants:
+ Det[1] | ilut = 1023 | det = [ 1  2  3  4  5  6  7  8  9 10]
+ Det[2] | ilut = 2559 | det = [ 1  2  3  4  5  6  7  8  9 12]
+ Det[3] | ilut = 8703 | det = [ 1  2  3  4  5  6  7  8  9 14]
+ Det[4] | ilut = 1791 | det = [ 1  2  3  4  5  6  7  8 10 11]
+ Det[5] | ilut = 4863 | det = [ 1  2  3  4  5  6  7  8 10 13]
+ Det[6] | ilut = 3327 | det = [ 1  2  3  4  5  6  7  8 11 12]
+ Det[7] | ilut = 9471 | det = [ 1  2  3  4  5  6  7  8 11 14]
+ Det[8] | ilut = 6399 | det = [ 1  2  3  4  5  6  7  8 12 13]
+ Det[9] | ilut = 12543 | det = [ 1  2  3  4  5  6  7  8 13 14]
+ Det[10] | ilut = 2943 | det = [ 1  2  3  4  5  6  7  9 10 12]
+ ... 
+    Number of dets read = 441
+    Time taken to read determinants: 0.01 seconds.
+Determinants read successfully ...
+================================================================================
+                   Initializing the System Hamiltonian H[fn]                   
+================================================================================
+Reading the hamiltonian from file: FIXEDNODE-HAMILTONIAN
+    Skipping the first 4 lines.
+Debugging info: first 10x10 block of the Hamiltonian matrix:
+[[-7.98884786e+01  0.00000000e+00  1.93924037e-01  0.00000000e+00
+  -1.93924037e-01  4.37249026e-02  6.14219829e-03 -6.14219829e-03
+   2.48365707e-02  0.00000000e+00]
+ [ 0.00000000e+00  3.36969949e+02  0.00000000e+00  0.00000000e+00
+  -6.14219829e-03  2.48100059e+00  0.00000000e+00 -1.15391151e-01
+   2.36977999e-03  0.00000000e+00]
+ [ 1.93924037e-01  0.00000000e+00  3.89126039e+01 -6.14219829e-03
+   0.00000000e+00 -1.25781855e-02  0.00000000e+00  0.00000000e+00
+   0.00000000e+00 -3.34898315e-03]
+ [ 0.00000000e+00  0.00000000e+00 -6.14219829e-03  3.36969949e+02
+   0.00000000e+00 -2.48100059e+00 -1.15391151e-01  0.00000000e+00
+  -2.36977999e-03  0.00000000e+00]
+ [-1.93924037e-01 -6.14219829e-03  0.00000000e+00  0.00000000e+00
+   3.89126039e+01  1.25781855e-02  0.00000000e+00  0.00000000e+00
+   0.00000000e+00  8.83628964e-03]
+ [ 4.37249026e-02  2.48100059e+00 -1.25781855e-02 -2.48100059e+00
+   1.25781855e-02  2.72361781e+01 -8.03702374e-01  8.03702374e-01
+   0.00000000e+00 -1.02613850e-02]
+ [ 6.14219829e-03  0.00000000e+00  0.00000000e+00 -1.15391151e-01
+   0.00000000e+00 -8.03702374e-01  1.68206136e+02  0.00000000e+00
+  -8.09537411e-01  0.00000000e+00]
+ [-6.14219829e-03 -1.15391151e-01  0.00000000e+00  0.00000000e+00
+   0.00000000e+00  8.03702374e-01  0.00000000e+00  1.68206136e+02
+   8.09537411e-01  8.54906336e-03]
+ [ 2.48365707e-02  2.36977999e-03  0.00000000e+00 -2.36977999e-03
+   0.00000000e+00  0.00000000e+00 -8.09537411e-01  8.09537411e-01
+   1.41159599e+02  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00 -3.34898315e-03  0.00000000e+00
+   8.83628964e-03 -1.02613850e-02  0.00000000e+00  8.54906336e-03
+   0.00000000e+00 -8.06104401e+01]]
+    Hamltonian of shape [441,441]
+    Time taken to read Hamiltonian: 0.13 seconds.
+Hamiltonian read successfully ...
+================================================================================
+            Diagonalizing the H[fn] Hamiltonian by Lanczos Algorithm            
+================================================================================
+Sarting Lanczos diagonalization for 1 lowest eigenvalues ...
+Lanczos diagonalization completed in 0.66 seconds.
+E[o]       = -85.26718965367283
+E[o]+Ecore = -1656.023724008318
+Debugging info: printing requested roots:
+[-85.26718965]
+Debugging info: printing first 10 components of the first eigenvector:
+[ 0.10462826  0.00115593 -0.00285283 -0.00115593  0.00285283 -0.00030427
+ -0.00011973  0.00011973 -0.00017252 -0.054778  ]
+================================================================================
+                      Initializing the Trial Wave Function                      
+================================================================================
+Reading the hamiltonian from file: FIXEDNODE-TWFN
+    Skipping the first 4 lines.
+Debugging info: first 10 Trial Wave Function amplitudes:
+[ 0.45444802  0.00504008 -0.01242744 -0.00504008  0.01242744 -0.0009091
+ -0.00050329  0.00050329 -0.00057965 -0.24000605]
+    Number of amplitudes read = 441
+Trial Wave Function read successfully ...
+Calculating the energy of the Trial Wave Function ...
+    Time taken to calculate the Trial Wave Function energy: 0.00 seconds.
+E[T] = -1656.023447999454
