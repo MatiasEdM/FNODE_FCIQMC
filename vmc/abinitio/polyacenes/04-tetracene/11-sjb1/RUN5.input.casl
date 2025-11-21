@@ -2,7 +2,8 @@ General:
    Random seed: timer
 Plan:
   VMC-optimization:
-    Maximum cycles: 0
+    Minimum cycles: 7
+    Convergence cycles: 5
 System:
   Read Hamiltonian: FCIDUMP_loc
   Hamiltonian tolerance: 1.e-10
@@ -33,5 +34,3 @@ VMC:
   nconfig: 150000
 Jastrow: wfn.casl
 Backflow: wfn.casl
-Jastrow dump: jastrow.dat
-Backflow dump: backflow.dat

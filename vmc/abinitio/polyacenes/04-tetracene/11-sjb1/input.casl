@@ -2,11 +2,10 @@ General:
    Random seed: timer
 Plan:
   VMC-optimization:
-    Minimum cycles: 7
+    Minimum cycles: 10
     Convergence cycles: 5
 System:
   Read Hamiltonian: FCIDUMP_loc
-  Hamiltonian tolerance: 1.e-10
   Read orbitals: LTSC.mat
   Complex orbitals: F
   Geometry:
@@ -31,6 +30,6 @@ System:
     Tolerance: 0.05
 VMC:
   nstep: 500000
-  nconfig: 100000
+  nconfig: 150000
 Jastrow: wfn.casl
 Backflow: wfn.casl
