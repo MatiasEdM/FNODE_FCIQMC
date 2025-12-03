@@ -1,0 +1,318 @@
+Run started: Wed Dec  3 08:09:44 CET 2025
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 512 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+General:
+  Random seed: timer
+
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+  Geometry:
+    r_6: [ 2.65527474609200, 6.99295716670100 ]
+    r_17: [ 1.36293650781400, 4.60945461241000 ]
+    r_4: [ 2.64522049959100, 2.32844339311600 ]
+    r_3: [ 1.36109054637300, 0.00000000000000 ]
+    r_15: [ 1.35254544726900, 9.20289291228100 ]
+    r_7: [ 2.65527474609200, -6.99295716670100 ]
+    r_11: [ 1.36293650781400, -4.60945461241000 ]
+    r_9: [ 2.64522049959100, -2.32844339311600 ]
+    r_16: [ 1.35254544726900, -9.20289291228100 ]
+    r_12: [ -2.65527474609200, 6.99295716670100 ]
+    r_8: [ -1.36293650781400, 4.60945461241000 ]
+    r_14: [ -2.64522049959100, 2.32844339311600 ]
+    r_1: [ -1.36109054637300, 0.00000000000000 ]
+    r_5: [ -1.35254544726900, 9.20289291228100 ]
+    r_13: [ -2.65527474609200, -6.99295716670100 ]
+    r_2: [ -1.36293650781400, -4.60945461241000 ]
+    r_10: [ -2.64522049959100, -2.32844339311600 ]
+    r_18: [ -1.35254544726900, -9.20289291228100 ]
+    Tolerance: 0.05
+
+VMC:
+  nstep: 500000
+  nconfig: 150000
+
+Jastrow: wfn.casl
+
+Backflow: wfn.casl
+
+Jastrow dump: jastrow.dat
+
+Backflow dump: backflow.dat
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 1671718906 (from timer)
+
+* Loaded integrals for system with nelec=18, ms2=0, norb=18
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 18 (i) values
+  - U_iiii [opp] (local, 1-site): 18 (i) values
+  - U_kkii [opp] (local, 2-site): 306 contribs. from 18 (i) values
+  - U_kkii [par] (local, 2-site): 153 contribs. from 17 (i) values
+  - T_ji (single, 2-site): 306 contribs. from 18 (i) values
+  - U_kkji [opp] (single, 2/3-site): 5508 contribs. from 306 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 5202 contribs. from 306 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 93588 contribs. from 306 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 21624 contribs. from 272 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 9843
+* Reading override orbitals from file "LTSC.mat".
+* Site labels:
+  +-----------+
+  |    5 15   |
+  |12        6|
+  |    8 17   |
+  |14        4|
+  |    1  3   |
+  |10        9|
+  |    2 11   |
+  |13        7|
+  |   18 16   |
+  +-----------+
+* Automatically set Site kinds:
+  [ 1, 2, 1, 3, 4, 5, 5, 2, 3, 3, 2, 5, 5, 3, 4, 4, 2, 4 ]
+  +-------+
+  |  4 4  |
+  |5     5|
+  |  2 2  |
+  |3     3|
+  |  1 1  |
+  |3     3|
+  |  2 2  |
+  |5     5|
+  |  4 4  |
+  +-------+
+* Maximum Site kind: 5
+* Number of site-pair kinds with Tij=0: 0
+* Automatically set Site pair kinds:
+  Site 1: [ 0, -18, 2, -15, 29, -24, -24, 18, -15, 6, -13, -44, -44, -6, 28, -28, 13, 29 ]
+  Site 2: [ -18, 0, -13, 22, 40, -33, 14, 26, 17, -5, 3, 31, -7, 36, 34, -12, 25, 16 ]
+  Site 3: [ 2, -13, 0, -6, 28, 44, 44, 13, -6, 15, -18, 24, 24, -15, 29, -29, 18, 28 ]
+  Site 4: [ -15, 22, -6, 0, 23, 11, -30, -17, 8, 20, 36, 19, -27, 9, -38, 32, -5, -35 ]
+  Site 5: [ 29, 40, 28, 23, 0, 21, 39, -16, -35, 32, 34, -1, -43, -38, 4, 42, -12, -45 ]
+  Site 6: [ -24, -33, 44, 11, 21, 0, -41, -14, -30, -27, -31, -10, 37, -19, 1, -43, -7, 39 ]
+  Site 7: [ -24, 14, 44, -30, 39, -41, 0, 33, 11, 19, 7, 37, -10, 27, 43, -1, 31, 21 ]
+  Site 8: [ 18, 26, 13, -17, -16, -14, 33, 0, -22, 36, 25, 7, -31, -5, -12, 34, 3, -40 ]
+  Site 9: [ -15, 17, -6, 8, -35, -30, 11, -22, 0, -9, 5, -27, 19, -20, -32, 38, -36, 23 ]
+  Site 10: [ 6, -5, 15, 20, 32, -27, 19, 36, -9, 0, -17, -30, 11, -8, 35, 23, 22, 38 ]
+  Site 11: [ -13, 3, -18, 36, 34, -31, 7, 25, 5, -17, 0, 33, -14, 22, 40, -16, 26, 12 ]
+  Site 12: [ -44, 31, 24, 19, -1, -10, 37, 7, -27, -30, 33, 0, -41, -11, -21, 39, 14, -43 ]
+  Site 13: [ -44, -7, 24, -27, -43, 37, -10, -31, 19, 11, -14, -41, 0, 30, -39, 21, -33, -1 ]
+  Site 14: [ -6, 36, -15, 9, -38, -19, 27, -5, -20, -8, 22, -11, 30, 0, 23, 35, -17, -32 ]
+  Site 15: [ 28, 34, 29, -38, 4, 1, 43, -12, -32, 35, 40, -21, -39, 23, 0, 45, -16, -42 ]
+  Site 16: [ -28, -12, -29, 32, 42, -43, -1, 34, 38, 23, -16, 39, 21, 35, 45, 0, 40, -4 ]
+  Site 17: [ 13, 25, 18, -5, -12, -7, 31, 3, -36, 22, 26, 14, -33, -17, -16, 40, 0, -34 ]
+  Site 18: [ 29, 16, 28, -35, -45, 39, 21, -40, 23, 38, 12, -43, -1, -32, -42, -4, -34, 0 ]
+  For site 1 of kind 1:
+  +---------------+
+  |     29  28    |
+  |-44         -24|
+  |     18  13    |
+  | -6         -15|
+  |      0   2    |
+  |  6         -15|
+  |    -18 -13    |
+  |-44         -24|
+  |     29 -28    |
+  +---------------+
+  For site 2 of kind 2:
+  +---------------+
+  |     40  34    |
+  | 31         -33|
+  |     26  25    |
+  | 36          22|
+  |    -18 -13    |
+  | -5          17|
+  |      0   3    |
+  | -7          14|
+  |     16 -12    |
+  +---------------+
+  For site 4 of kind 3:
+  +---------------+
+  |     23 -38    |
+  | 19          11|
+  |    -17  -5    |
+  |  9           0|
+  |    -15  -6    |
+  | 20           8|
+  |     22  36    |
+  |-27         -30|
+  |    -35  32    |
+  +---------------+
+  For site 5 of kind 4:
+  +---------------+
+  |      0   4    |
+  | -1          21|
+  |    -16 -12    |
+  |-38          23|
+  |     29  28    |
+  | 32         -35|
+  |     40  34    |
+  |-43          39|
+  |    -45  42    |
+  +---------------+
+  For site 6 of kind 5:
+  +---------------+
+  |     21   1    |
+  |-10           0|
+  |    -14  -7    |
+  |-19          11|
+  |    -24  44    |
+  |-27         -30|
+  |    -33 -31    |
+  | 37         -41|
+  |     39 -43    |
+  +---------------+
+* Maximum (unsigned) Site pair kind: 45
+General system setup:
+* Number of sites       : 18
+* Number of electrons   : 18
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 18
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Writing full Jastrow parameter lists to "jastrow.dat".
+* Not using multideterminants
+* Backflow parameter file: "wfn.casl"
+* Writing full backflow parameter lists to "backflow.dat".
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   2.3639E+09
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.14s]
+* Equil. acc.ratio (%)     =  10.2610
+* Sample config after equilibration:
+  +-------+
+  |  2 d  |
+  |0     u|
+  |  2 d  |
+  |0     2|
+  |  u 0  |
+  |d     u|
+  |  u d  |
+  |u     u|
+  |  d d  |
+  +-------+
+* Number of accum. steps   = 600064 x 10
+* Running VMC accumulation.
+    [walltime: 1m elapsed, 42.4s remaining]
+  Done. [total walltime: 1m45s]
+* Acceptance ratio (%)     =  10.1984
+* Etot/t                   =  -6.886331704861E+02 +/-   5.867054242890E-05
+  > Ttot/t                 =  -5.653372615620E+01 +/-   8.525721990497E-04
+  > Utot/t                 =   2.436739295266E+01 +/-   8.478432126724E-04
+* var[Eloc/t]              =   2.057907034242E-03 +/-   2.021597014185E-05
+* Correlation length       =   1.003718728716E+00
+* log10 Psi^2 range: -59.527277544038533 -- -49.776109887860088
+* log10 Pgen range : -59.527277544038533 -- -49.776109887860088
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.498      0.499
+      2        0.499      0.498
+      3        0.499      0.497
+      4        0.500      0.505
+      5        0.502      0.502
+      6        0.498      0.500
+      7        0.497      0.501
+      8        0.497      0.498
+      9        0.502      0.503
+     10        0.502      0.503
+     11        0.497      0.495
+     12        0.498      0.499
+     13        0.499      0.497
+     14        0.503      0.501
+     15        0.503      0.500
+     16        0.503      0.501
+     17        0.500      0.497
+     18        0.502      0.501
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          3.130
+      1      0        0.904      0.537      2.580
+      2      0        0.146      0.341      0.537
+      3      0        0.275      0.700      1.067
+      4      0        0.237      0.750      1.070
+      5      0        0.715      0.970      2.369
+      6      0        0.594      1.271      2.222
+      7      0        0.470      1.516      2.100
+      8      0        0.116      1.044      0.969
+      9      0        0.143      0.834      1.137
+     10      0        0.139      0.857      1.086
+     11      0        0.229      2.076      1.923
+     12      0        0.273      1.887      2.068
+     13      0        0.310      1.856      2.069
+     14      0        0.242      2.053      1.937
+     15      0        0.246      2.110      1.920
+     16      0        0.240      2.107      1.917
+     17      0        0.246      2.128      1.893
+     18      0        0.277      2.083      1.911
+     19      0        0.223      1.964      2.048
+     20      0        0.113      0.979      1.039
+     21      0        0.216      2.134      1.896
+     22      0        0.248      2.056      1.952
+     23      0        0.226      2.067      1.964
+     24      0        0.252      2.021      1.958
+     25      0        0.146      0.958      1.014
+     26      0        0.138      1.012      0.975
+     27      0        0.221      1.990      2.023
+     28      0        0.264      1.943      2.043
+     29      0        0.255      2.041      1.964
+     30      0        0.222      2.021      1.989
+     31      0        0.249      1.971      1.999
+     32      0        0.227      1.986      2.041
+     33      0        0.248      2.002      1.969
+     34      0        0.252      1.968      2.022
+     35      0        0.225      2.041      1.990
+     36      0        0.264      1.909      2.068
+     37      0        0.110      0.995      0.996
+     38      0        0.249      1.860      2.131
+     39      0        0.224      2.006      1.996
+     40      0        0.251      2.013      1.980
+     41      0        0.110      0.997      0.993
+     42      0        0.113      1.002      1.011
+     43      0        0.222      1.996      2.009
+     44      0        0.260      1.943      2.023
+     45      0        0.114      1.009      1.001
+
+VDAGGER finished.
+Total VDAGGER walltime: 2m8s
+
+Run ended: Wed Dec  3 08:12:25 CET 2025

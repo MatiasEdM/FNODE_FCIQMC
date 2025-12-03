@@ -1,0 +1,222 @@
+Run started: Sun Nov  2 00:14:29 CET 2025
+Using VDAGGER_ARCH = intel24_raven_cluster
+Running 1x72 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 4608 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 315353323 (from timer)
+
+* Loaded integrals for system with nelec=34, ms2=0, norb=34
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 34 (i) values
+  - U_iiii [opp] (local, 1-site): 34 (i) values
+  - U_kkii [opp] (local, 2-site): 1122 contribs. from 34 (i) values
+  - U_kkii [par] (local, 2-site): 561 contribs. from 33 (i) values
+  - T_ji (single, 2-site): 1122 contribs. from 34 (i) values
+  - U_kkji [opp] (single, 2/3-site): 38148 contribs. from 1122 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 37026 contribs. from 1122 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 1233140 contribs. from 1122 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 301448 contribs. from 1056 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 71907
+* Reading override orbitals from file "LTSC.mat".
+* Site labels:
+  [draw_int: system geometry not defined]
+* Automatically set Site kinds:
+  [ 1, 2, 3, 4, 1, 5, 6, 7, 7, 5, 8, 3, 8, 4, 8, 7, 6, 6, 7, 8, 4, 9, 3, 9, 6, 5, 9, 9, 5, 2, 4, 3, 2, 2 ]
+  [draw_int: system geometry not defined]
+* Maximum Site kind: 9
+* Number of site-pair kinds with Tij=0: 0
+* Automatically set Site pair kinds:
+  Site 1: [ 0, -53, -89, 32, 4, 113, 29, 69, -83, 113, -97, -89, 97, -26, -116, 69, -29, -10, 83, -116, 32, -45, -70, 54, -10, 91, 45, 54, 91, -64, 26, 70, 64, 53 ]
+  Site 2: [ -53, 0, -24, 71, -64, 58, -67, -27, -144, 148, -139, -125, -126, -34, -47, 102, -50, 68, -13, -119, 25, -108, -35, 81, -41, 78, 8, 33, 118, 3, 75, 105, 93, 85 ]
+  Site 3: [ -89, -24, 0, 90, -70, 31, -80, 7, -114, 122, -128, -106, -22, -52, 12, 153, -66, 104, 36, -141, 72, -96, 6, 130, -59, 23, -43, -49, 152, -35, 86, 137, 105, 125 ]
+  Site 4: [ 32, 71, 90, 0, 26, -115, 30, -101, 46, -132, 84, 72, -109, 55, 127, -62, -44, -9, -88, 76, -63, -28, 86, 11, -51, -124, -73, -65, -74, 75, 5, -52, -34, -25 ]
+  Site 5: [ 4, -64, -70, 26, 0, 91, 10, 83, -69, 91, -116, -70, 116, -32, -97, 83, -10, -29, 69, -97, 26, -54, -89, 45, -29, 113, 54, 45, 113, -53, 32, 89, 53, 64 ]
+  Site 6: [ 113, 58, 31, -115, 91, 0, 107, 77, 129, -134, 142, 122, -42, 74, 1, -147, 98, -143, 48, 140, -132, 121, 23, 150, 100, 2, 79, 61, 151, 78, -124, -152, -118, -148 ]
+  Site 7: [ 29, -67, -80, 30, 10, 107, 0, 110, -94, -98, 99, 66, 120, -51, -111, -57, -20, -14, 92, 95, 44, -19, -104, -38, 37, 143, -103, 60, -100, -68, 9, -59, -41, -50 ]
+  Site 8: [ 69, -27, 7, -101, 83, 77, 110, 0, 145, -147, 133, 153, 40, 46, 21, -135, 57, -92, 16, 146, -62, 131, 36, -112, -94, 48, 39, -18, -129, -13, -88, -114, -144, -102 ]
+  Site 9: [ -83, -144, -114, 46, -69, 129, -94, 145, 0, -48, -21, -36, 146, -101, -133, -16, 92, -57, 135, 40, 88, -18, -153, -39, 110, 147, 112, 131, -77, -102, 62, 7, -27, -13 ]
+  Site 10: [ 113, 148, 122, -132, 91, -134, -98, -147, -48, 0, 42, 31, -142, 124, 140, 77, -107, 100, -129, 1, -115, -79, 152, 61, -143, 151, -121, 150, 2, 118, -74, -23, -78, -58 ]
+  Site 11: [ -97, -139, -128, 84, -116, 142, 99, 133, -21, 42, 0, 22, 149, -127, -138, -40, 120, -95, 146, 17, 109, -87, -141, -56, 111, 140, 136, 123, 1, -119, 76, -12, 47, -126 ]
+  Site 12: [ -89, -125, -106, 72, -70, 122, 66, 153, -36, 31, 22, 0, 128, -86, -141, 7, 80, -59, 114, 12, 90, 43, -137, -49, 104, 152, 96, 130, 23, -105, 52, -6, 35, 24 ]
+  Site 13: [ 97, -126, -22, -109, 116, -42, 120, 40, 146, -142, 149, 128, 0, 76, -17, -133, 99, -111, -21, 138, -84, 136, -12, -123, 95, -1, -87, 56, -140, 47, -127, -141, -119, -139 ]
+  Site 14: [ -26, -34, -52, 55, -32, 74, -51, 46, -101, 124, -127, -86, 76, 0, -84, 88, 9, 44, 62, -109, -5, -65, -72, 73, 30, 132, -11, -28, 115, -25, 63, 90, 71, 75 ]
+  Site 15: [ -116, -47, 12, 127, -97, 1, -111, 21, -133, 140, -138, -141, -17, -84, 0, 146, -95, 120, -40, -149, 76, -123, 22, 136, -99, 42, -56, 87, 142, 126, 109, 128, 139, 119 ]
+  Site 16: [ 69, 102, 153, -62, 83, -147, -57, -135, -16, 77, -40, 7, -133, 88, 146, 0, -110, -94, -145, 21, -101, -39, 114, -18, -92, -129, -131, -112, 48, 144, -46, -36, 13, 27 ]
+  Site 17: [ -29, -50, -66, -44, -10, 98, -20, 57, 92, -107, 120, 80, 99, 9, -95, -110, 0, -37, -94, 111, -30, -103, -59, -60, 14, 100, -19, 38, -143, -41, -51, -104, -68, -67 ]
+  Site 18: [ -10, 68, 104, -9, -29, -143, -14, -92, -57, 100, -95, -59, -111, 44, 120, -94, -37, 0, -110, -99, -51, -38, 80, -19, 20, -107, -60, 103, 98, 67, -30, 66, 50, 41 ]
+  Site 19: [ 83, -13, 36, -88, 69, 48, 92, 16, 135, -129, 146, 114, -21, 62, -40, -145, -94, -110, 0, 133, -46, 112, 7, -131, 57, 77, -18, 39, -147, -27, -101, -153, -102, -144 ]
+  Site 20: [ -116, -119, -141, 76, -97, 140, 95, 146, 40, 1, 17, 12, 138, -109, -149, 21, 111, -99, 133, 0, 127, 56, -128, 87, 120, 142, 123, 136, 42, -139, 84, -22, -126, 47 ]
+  Site 21: [ 32, 25, 72, -63, 26, -132, 44, -62, 88, -115, 109, 90, -84, -5, 76, -101, -30, -51, -46, 127, 0, 73, 52, -65, -9, -74, 28, 11, -124, 34, -55, -86, -75, -71 ]
+  Site 22: [ -45, -108, -96, -28, -54, 121, -19, 131, -18, -79, -87, 43, 136, -65, -123, -39, -103, -38, 112, 56, 73, 0, -130, -15, 60, -150, 82, 117, -61, -81, -11, -49, 33, 8 ]
+  Site 23: [ -70, -35, 6, 86, -89, 23, -104, 36, -153, 152, -141, -137, -12, -72, 22, 114, -59, 80, 7, -128, 52, -130, 0, 96, -66, 31, -49, -43, 122, -24, 90, 106, 125, 105 ]
+  Site 24: [ 54, 81, 130, 11, 45, 150, -38, -112, -39, 61, -56, -49, -123, 73, 136, -18, -60, -19, -131, 87, -65, -15, 96, 0, 103, -121, -117, -82, 79, 108, 28, 43, -8, -33 ]
+  Site 25: [ -10, -41, -59, -51, -29, 100, 37, -94, 110, -143, 111, 104, 95, 30, -99, -92, 14, 20, 57, 120, -9, 60, -66, 103, 0, 98, 38, -19, -107, -50, -44, -80, -67, -68 ]
+  Site 26: [ 91, 78, 23, -124, 113, 2, 143, 48, 147, 151, 140, 152, -1, 132, 42, -129, 100, -107, 77, 142, -74, -150, 31, -121, 98, 0, 61, 79, -134, 58, -115, -122, -148, -118 ]
+  Site 27: [ 45, 8, -43, -73, 54, 79, -103, 39, 112, -121, 136, 96, -87, -11, -56, -131, -19, -60, -18, 123, 28, 82, -49, -117, 38, 61, 0, 15, 150, 33, -65, -130, -81, -108 ]
+  Site 28: [ 54, 33, -49, -65, 45, 61, 60, -18, 131, 150, 123, 130, 56, -28, 87, -112, 38, 103, 39, 136, 11, 117, -43, -82, -19, 79, 15, 0, -121, 8, -73, -96, -108, -81 ]
+  Site 29: [ 91, 118, 152, -74, 113, 151, -100, -129, -77, 2, 1, 23, -140, 115, 142, 48, -143, 98, -147, 42, -124, -61, 122, 79, -107, -134, 150, -121, 0, 148, -132, -31, -58, -78 ]
+  Site 30: [ -64, 3, -35, 75, -53, 78, -68, -13, -102, 118, -119, -105, 47, -25, 126, 144, -41, 67, -27, -139, 34, -81, -24, 108, -50, 58, 33, 8, 148, 0, 71, 125, 85, 93 ]
+  Site 31: [ 26, 75, 86, 5, 32, -124, 9, -88, 62, -74, 76, 52, -127, 63, 109, -46, -51, -30, -101, 84, -55, -11, 90, 28, -44, -115, -65, -73, -132, 71, 0, -72, -25, -34 ]
+  Site 32: [ 70, 105, 137, -52, 89, -152, -59, -114, 7, -23, -12, -6, -141, 90, 128, -36, -104, 66, -153, -22, -86, -49, 106, 43, -80, -122, -130, -96, -31, 125, -72, 0, -24, -35 ]
+  Site 33: [ 64, 93, 105, -34, 53, -118, -41, -144, -27, -78, 47, 35, -119, 71, 139, 13, -68, 50, -102, -126, -75, 33, 125, -8, -67, -148, -81, -108, -58, 85, -25, -24, 0, 3 ]
+  Site 34: [ 53, 85, 125, -25, 64, -148, -50, -102, -13, -58, -126, 24, -139, 75, 119, 27, -67, 41, -144, 47, -71, 8, 105, -33, -68, -118, -108, -81, -78, 93, -34, -35, 3, 0 ]
+  For site 1 of kind 1:
+  [draw_int: system geometry not defined]
+  For site 2 of kind 2:
+  [draw_int: system geometry not defined]
+  For site 3 of kind 3:
+  [draw_int: system geometry not defined]
+  For site 4 of kind 4:
+  [draw_int: system geometry not defined]
+  For site 6 of kind 5:
+  [draw_int: system geometry not defined]
+  For site 7 of kind 6:
+  [draw_int: system geometry not defined]
+  For site 8 of kind 7:
+  [draw_int: system geometry not defined]
+  For site 11 of kind 8:
+  [draw_int: system geometry not defined]
+  For site 22 of kind 9:
+  [draw_int: system geometry not defined]
+* Maximum (unsigned) Site pair kind: 153
+General system setup:
+* Number of sites       : 34
+* Number of electrons   : 34
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 34
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Not using multideterminants
+* Not using a backflow transformation
+* Not using wave function manipulation
+
+slurmstepd: error: Detected 72 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 72 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 58 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 65 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 63 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 60 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 39 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 52 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 56 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 60 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 56 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 59 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 32 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 66 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 63 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 63 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 65 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 60 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 66 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 43 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 64 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 54 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 65 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 65 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 36 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 34 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 44 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 27 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 55 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 65 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 52 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 63 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 63 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 62 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 54 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 37 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 61 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 55 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 52 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+slurmstepd: error: Detected 29 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+srun: error: ravc2234: tasks 936-1007: Out Of Memory
+srun: Terminating StepId=22680006.0
+slurmstepd: error: *** STEP 22680006.0 ON ravc2219 CANCELLED AT 2025-11-02T00:14:39 ***
+slurmstepd: error: Detected 29 oom_kill events in StepId=22680006.0. Some of the step tasks have been OOM Killed.
+srun: error: ravc2492: tasks 2304-2375: Killed
+srun: Force Terminated StepId=22680006.0
+
+Run ended: Sun Nov  2 00:15:09 CET 2025
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: mdimauro(31184)
+Job name:  vd[n
+Node list: ravc[2219-2222,2224-2228,2230-2234,2236,2245,2253-2256,2282,2285,2287-2288,2325,2474-2476,2482,2488-2489,2491-2494,2497,2503,2553,2555,2557,2577-2599,2616]
+Job start: Sun Nov  2 00:14:26 CET 2025
+Job end:   Sun Nov  2 00:15:09 CET 2025
+Work dir:  /raven/u/mdimauro/calcs/vmc/polyacenes/08-octacene/01-sj1
+Command:   /raven/u/mdimauro/calcs/vmc/polyacenes/08-octacene/01-sj1/vdagger
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+JobID            JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode
+------------- ---------- ------ ------ ------ ------------ ------------ ---------- --------
+22680006         vd[n=8]     64          9216                             00:00:43      0:0
+22680006.0       vdagger     64   4608   9216     3760.51M     1688.31M   00:00:39    0:125
+  
+Maximum memory per node: 283.909054 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 2.3 %
+  
