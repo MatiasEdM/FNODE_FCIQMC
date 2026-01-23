@@ -1,0 +1,58 @@
+Run started: Wed Jan 14 15:32:48 CET 2026
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 128 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+General:
+  Random seed: timer
+
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+System:
+  Read orbitals: LTSC.clean
+  Read hamiltonian: FCIDUMP.new
+
+VMC:
+  nstep: 500000
+  nconfig: 100000
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 655599150 (from timer)
+
+* Loaded integrals for system with nelec=10, ms2=0, norb=10
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - U_iiii [opp] (local, 1-site): 10 (i) values
+  - T_ji (single, 2-site): 40 contribs. from 10 (i) values
+  - Max. no. wfn. ratios in Eloc: 4
+* Reading override orbitals from file "LTSC.clean".
+ERROR : Problem parsing file "LTSC.clean".
+
+Run ended: Wed Jan 14 15:33:18 CET 2026

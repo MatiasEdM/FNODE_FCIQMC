@@ -1,0 +1,49 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -4.9485824994323089, optimizable ]
+  d-h term:
+    Range: 3
+    Parameters:
+      c_1: [ -6.4597989862668709E-002, optimizable ]
+      c_2: [ 0.10314958024019986, optimizable ]
+      c_3: [ 2.4474485410785050E-003, optimizable ]
+  e-e term:
+    Range: 2
+    Parameters:
+      c_1,1: [ -0.36290704070187341, optimizable ]
+      c_1,2: [ 0.20280033390477228, optimizable ]
+      c_2,1: [ -0.15208683563678324, optimizable ]
+      c_2,2: [ 0.24937001997715555, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: discrete
+    Policy: dx
+    Parameters:
+      c_1: [ 1.9968664746107836, optimizable ]
+  d-h term:
+    Range: 3
+    Parameters:
+      c_1: [ 3.5799368863472676, optimizable ]
+      c_2: [ 0.21934917705224760, optimizable ]
+      c_3: [ -0.56737917225194445, optimizable ]
+  d-e term:
+    Range: 3
+    Parameters:
+      c_1: [ -3.4518285993608649E-002, optimizable ]
+      c_2: [ -0.18614228106349437, optimizable ]
+      c_3: [ -0.58405912596483445, optimizable ]
+  e-h term:
+    Range: 3
+    Parameters:
+      c_1: [ 0.46679206863471301, optimizable ]
+      c_2: [ -3.7424458285056514E-002, optimizable ]
+      c_3: [ -0.65729923851178473, optimizable ]
+  e-e term:
+    Range: 3
+    Parameters:
+      c_1: [ -2.5448377835254211E-002, optimizable ]
+      c_2: [ -0.12139379952710121, optimizable ]
+      c_3: [ -0.22699151257563285, optimizable ]
