@@ -1,4 +1,4 @@
-Run started: Fri Jan 16 14:29:05 CET 2026
+Run started: Fri Jan 23 16:50:11 CET 2026
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -57,7 +57,7 @@ Jastrow dump: jastrow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 323446841 (from timer)
+* Random seed: 1814377783 (from timer)
 
 Hubbard system:
 * Dimensionality        : 2
@@ -214,57 +214,57 @@ VMC #1:
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
   Done. [total walltime: 0.03s]
-* Equil. acc.ratio (%)     =  12.2060
+* Equil. acc.ratio (%)     =  12.1045
 * Sample config after equilibration:
   +-----------+
-  |  d   u   d|
-  |u   0   u  |
   |  d   d   d|
+  |d   u   u  |
+  |  d   d   u|
   |u   u   u  |
   |  d   d   d|
-  |u   u   2  |
+  |u   u   u  |
   +-----------+
 * Number of accum. steps   = 5000320 x 10
 * Running VMC accumulation.
-  Done. [total walltime: 8.88s]
-* Acceptance ratio (%)     =  12.0975
-* Etot/t                   =  -8.659921010807E+00 +/-   1.301634155973E-03
-  > Ttot/t                 =  -1.839228693937E+01 +/-   4.793205415483E-03
-  > Utot/t                 =   9.732365928581E+00 +/-   4.575612410628E-03
-* var[Eloc/t]              =   8.372404841940E+00 +/-   1.433988808874E-02
-* Correlation length       =   1.011871702383E+00
-* log10 Psi^2 range: -12.340085964443853 -- 0.64609424776457494E-001
-* log10 Pgen range : -12.340085964443853 -- 0.64609424776457494E-001
+  Done. [total walltime: 8.91s]
+* Acceptance ratio (%)     =  11.9486
+* Etot/t                   =  -8.660318031495E+00 +/-   1.304697605861E-03
+  > Ttot/t                 =  -1.830405923200E+01 +/-   4.817200048835E-03
+  > Utot/t                 =   9.643741200563E+00 +/-   4.577077720508E-03
+* var[Eloc/t]              =   8.405382319802E+00 +/-   1.514236798402E-02
+* Correlation length       =   1.012651608853E+00
+* log10 Psi^2 range: -13.657491444871900 -- -0.94170291472989753
+* log10 Pgen range : -13.657491444871900 -- -0.94170291472989753
 * Site occupation (ave. no. electrons per config.):
   > Site_  ___eu____  ___ed____
-      1        0.500      0.500
-      2        0.500      0.500
-      3        0.500      0.500
-      4        0.500      0.500
-      5        0.500      0.500
-      6        0.500      0.500
-      7        0.500      0.501
-      8        0.500      0.499
-      9        0.499      0.501
-     10        0.501      0.499
-     11        0.500      0.500
-     12        0.500      0.500
-     13        0.501      0.499
-     14        0.499      0.501
-     15        0.501      0.500
-     16        0.500      0.501
-     17        0.501      0.500
-     18        0.499      0.500
+      1        0.499      0.501
+      2        0.501      0.499
+      3        0.499      0.501
+      4        0.501      0.500
+      5        0.499      0.502
+      6        0.501      0.499
+      7        0.500      0.499
+      8        0.499      0.501
+      9        0.502      0.499
+     10        0.499      0.501
+     11        0.501      0.499
+     12        0.499      0.501
+     13        0.500      0.500
+     14        0.500      0.500
+     15        0.499      0.501
+     16        0.500      0.499
+     17        0.499      0.501
+     18        0.502      0.499
 * Pair-correlation analysis (ave. no. pairs per config.):
   > Shell  nsite  ___dh____  __eueu___  __eued___
-      0      1        0          0          1.217
-      1     18        1.134      9.639     25.409
-      2     18        0.420     23.645     12.245
-      3     18        0.388     23.436     12.494
-      4     18        0.396     12.094     23.830
-      5     18        0.090      3.186      5.805
+      0      1        0          0          1.205
+      1      4        1.123      9.493     25.564
+      2      4        0.415     23.830     12.060
+      3      4        0.381     23.628     12.304
+      4      4        0.391     11.913     24.011
+      5      1        0.088      3.136      5.856
 
 VDAGGER finished.
-Total VDAGGER walltime: 10.0s
+Total VDAGGER walltime: 10.3s
 
-Run ended: Fri Jan 16 14:29:45 CET 2026
+Run ended: Fri Jan 23 16:50:51 CET 2026
