@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH -J vd[n=8]
+#SBATCH -J vd[n=8A]
 #SBATCH -o output
 #SBATCH --mem=0
-#SBATCH --nodes=128
-#SBATCH --ntasks=4608
-#SBATCH --ntasks-per-node=36
+#SBATCH --nodes=256
+#SBATCH --ntasks=18432
+#SBATCH --ntasks-per-node=72
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=24:00:00

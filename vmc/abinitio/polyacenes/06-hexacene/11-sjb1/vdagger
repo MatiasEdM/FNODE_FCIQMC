@@ -2,12 +2,13 @@
 #SBATCH -J vd[n=6]
 #SBATCH -o output
 #SBATCH --mem=0
-#SBATCH --nodes=8
-#SBATCH --ntasks=1024
+#SBATCH --nodes=128
+#SBATCH --ntasks=9216
+#SBATCH --ntasks-per-node=72
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=24:00:00
-#SBATCH --partition=p.24h
+#SBATCH --partition=general
 
 ulimit -s unlimited 2> /dev/null
 export OMP_NUM_THREADS=1
@@ -16,13 +17,13 @@ export OPENBLAS_NUM_THREADS=1
 export GOTO_NUM_THREADS=1
 export BLAS_NUM_THREADS=1
 export ATLAS_NUM_THREADS=1
-export MODULEPATH='' ;       . /etc/profile.d/modules.sh ; module purge ; module load gnu-openmpi ;       export OMPI_MCA_mpi_warn_on_fork=0
-export SLURM_MPI_TYPE=pmix
+. /etc/profile.d/modules.sh ;       module purge ; module load intel/2024.0 impi/2021.11
+
 echo "Run started: $(date)"
-echo "Using VDAGGER_ARCH = gnu7_fkfamd_cluster"
-echo "Running 1x128 MPI processes."
+echo "Using VDAGGER_ARCH = intel24_raven_cluster"
+echo "Running 1x72 MPI processes."
 echo
-srun /home/dimauro/vdagger/build_gnu7_fkfamd_cluster_main_opt/bin/vdagger "input.casl"
+srun /u/mdimauro/vdagger/build_intel24_raven_cluster_main_opt/bin/vdagger "input.casl"
 echo
 echo "Run ended: $(date)"
 rm -f ".vdagger.lock"

@@ -1,0 +1,15 @@
+General:
+    Random seed: timer
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Hamiltonian tolerance: 1.e-10
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+VMC:
+  nstep:  1000000
+  nconfig: 100000
+Jastrow: wfn.casl
+Jastrow dump: jastrow.dat

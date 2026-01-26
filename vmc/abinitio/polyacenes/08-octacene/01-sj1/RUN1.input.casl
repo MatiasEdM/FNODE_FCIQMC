@@ -6,12 +6,12 @@ Plan:
     Convergence cycles: 3
 System:
   Read Hamiltonian: FCIDUMP_loc
+  Hamiltonian tolerance: 1.e-06
   Read orbitals: LTSC.mat
   Complex orbitals: F
 VMC:
-  nstep: 100000
-  nconfig: 50000
+  nstep: 500000
+  nconfig: 100000
 Optimization:
   max_niter: 1
 Jastrow: wfn.casl
-#Backflow: wfn.casl
