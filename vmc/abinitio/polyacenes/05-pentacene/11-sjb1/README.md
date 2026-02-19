@@ -1,6 +1,10 @@
 MAXIMUM RANGE: 68 | JASTROW[67]+BACKFLOW[68]
-CURRENTLY    : RUN20 is continuation of RUN20.
+CURRENTLY: RUN24: w/ MaxCyc=3 ; ConvCyc=2 ; MaxIter=Def ; nc=100000 ; Htol=1.e-10
 
+RUN23: w/ MaxCyc=3 ; ConvCyc=2 ; MaxIter=Def ; nc=100000 ; Htol=1.e-10 [ 2 - iter ].
+RUN22: w/ MaxCyc=7 ; ConvCyc=5 ; MaxIter=Def ; nc=100000 ; Htol=1.e-6 [converged].
+RUN21: w/ MaxCyc=7 ; ConvCyc=5 ; MaxIter=Def ; nc=100000 ; Htol=1.e-6 [ 6 - iter ].
+RUN20 is continuation of RUN20.
 RUN19 continuation of RUN18.
 RUN18 is checking of convergence [no max_iter].
 RUN17 is continuation of RUN16 (max_niter: 2) [convergence] (WARNING: at this point the Jastrow may introduce renormalization due to MaxRange-1).

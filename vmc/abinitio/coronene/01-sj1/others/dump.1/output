@@ -1,0 +1,261 @@
+Run started: Fri Nov  7 08:45:52 CET 2025
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 1024 MPI processes.
+* Input file: "input.casl"
+
+############# Start of input file dump #############
+General:
+  Random seed: timer
+
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+System:
+  Read Hamiltonian: FCIDUMP_loc
+  Read orbitals: LTSC.mat
+  Complex orbitals: F
+
+VMC:
+  nstep: 500000
+  nconfig: 100000
+
+Jastrow: wfn.casl
+
+Jastrow dump: jastrow.dat
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 1283892008 (from timer)
+
+* Loaded integrals for system with nelec=24, ms2=0, norb=24
+* INFO: setting number of electrons from integrals file.
+* Analysis of Hamiltonian connecitivity performed:
+  - T_ii (local, 1-site): 24 (i) values
+  - U_iiii [opp] (local, 1-site): 24 (i) values
+  - U_kkii [opp] (local, 2-site): 552 contribs. from 24 (i) values
+  - U_kkii [par] (local, 2-site): 276 contribs. from 23 (i) values
+  - T_ji (single, 2-site): 552 contribs. from 24 (i) values
+  - U_kkji [opp] (single, 2/3-site): 13248 contribs. from 552 (i,j) pairs
+  - U_kkji [par] (single, 3-site): 12696 contribs. from 552 (i,j) pairs
+  - U_lkji [opp] (double, 2/3/4-site): 304704 contribs. from 552 (i,j) pairs
+  - U_lkji [par] (double, 4-site): 71852 contribs. from 506 (i,j) pairs
+  - Max. no. wfn. ratios in Eloc: 24357
+* Reading override orbitals from file "LTSC.mat".
+* Site labels:
+  [draw_int: system geometry not defined]
+* Automatically set Site kinds:
+  [ 1, 2, 3, 2, 4, 1, 5, 3, 6, 1, 5, 5, 5, 5, 6, 1, 3, 4, 5, 5, 4, 5, 3, 4 ]
+  [draw_int: system geometry not defined]
+* Maximum Site kind: 6
+* Number of site-pair kinds with Tij=0: 0
+* Automatically set Site pair kinds:
+  Site 1: [ 0, -68, 69, -17, -26, 22, -65, 18, -8, 9, -38, -25, 16, 29, 23, 21, -28, 40, 53, -51, -31, 15, 3, 64 ]
+  Site 2: [ -68, 0, 62, 76, -71, -68, 32, 13, -27, 17, -55, 39, 32, 6, 4, 17, -13, -42, -6, -39, -71, -55, -62, -42 ]
+  Site 3: [ 69, 62, 0, 13, -36, -3, -43, -77, 19, -28, -41, 74, 59, -75, 67, -18, 12, -54, -35, -5, 7, -34, 66, 33 ]
+  Site 4: [ -17, 76, 13, 0, 42, -17, 39, 62, 4, 68, -6, 32, 39, 55, -27, 68, -62, 71, -55, -32, 42, -6, -13, 71 ]
+  Site 5: [ -26, -71, -36, 42, 0, -31, -50, -33, 14, 40, 44, 11, 46, 57, 52, 64, -54, 61, 78, 60, -47, -1, -7, -72 ]
+  Site 6: [ 22, -68, -3, -17, -31, 0, 16, 28, -8, 21, 15, 51, -65, -53, 23, 9, -18, 64, -29, 25, -26, -38, -69, 40 ]
+  Site 7: [ -65, 32, -43, 39, -50, 16, 0, 74, -30, -51, -48, 73, 79, 56, -37, 25, -5, 60, 45, 2, 46, -58, -59, -11 ]
+  Site 8: [ 18, 13, -77, 62, -33, 28, 74, 0, 67, 3, 75, -43, 5, 41, 19, -69, 66, -7, -34, -59, 54, -35, 12, 36 ]
+  Site 9: [ -8, -27, 19, 4, 14, -8, -30, 67, 0, -23, -24, -37, -30, 63, -20, -23, -67, -52, -63, 37, 14, -24, -19, -52 ]
+  Site 10: [ 9, 17, -28, 68, 40, 21, -51, 3, -23, 0, -53, -16, 25, 15, 8, 22, 69, -26, 38, -65, 64, 29, 18, -31 ]
+  Site 11: [ -38, -55, -41, -6, 44, 15, -48, 75, -24, -53, 0, -56, -58, -70, -63, 29, 35, -78, -49, -45, -1, 10, 34, 57 ]
+  Site 12: [ -25, 39, 74, 32, 11, 51, 73, -43, -37, -16, -56, 0, -2, 48, -30, 65, -59, -46, -58, -79, -60, 45, -5, 50 ]
+  Site 13: [ 16, 32, 59, 39, 46, -65, 79, 5, -30, 25, -58, -2, 0, -45, -37, -51, -74, -11, -56, -73, -50, -48, 43, 60 ]
+  Site 14: [ 29, 6, -75, 55, 57, -53, 56, 41, 63, 15, -70, 48, -45, 0, 24, -38, -34, -1, -10, -58, -78, 49, -35, 44 ]
+  Site 15: [ 23, 4, 67, -27, 52, 23, -37, 19, -20, 8, -63, -30, -37, 24, 0, 8, -19, -14, -24, 30, 52, -63, -67, -14 ]
+  Site 16: [ 21, 17, -18, 68, 64, 9, 25, -69, -23, 22, 29, 65, -51, -38, 8, 0, -3, -31, -15, 16, 40, -53, 28, -26 ]
+  Site 17: [ -28, -13, 12, -62, -54, -18, -5, 66, -67, 69, 35, -59, -74, -34, -19, -3, 0, -36, 41, -43, 33, -75, -77, 7 ]
+  Site 18: [ 40, -42, -54, 71, 61, 64, 60, -7, -52, -26, -78, -46, -11, -1, -14, -31, -36, 0, -44, -50, -72, 57, -33, -47 ]
+  Site 19: [ 53, -6, -35, -55, 78, -29, 45, -34, -63, 38, -49, -58, -56, -10, -24, -15, 41, -44, 0, 48, -57, 70, -75, 1 ]
+  Site 20: [ -51, -39, -5, -32, 60, 25, 2, -59, 37, -65, -45, -79, -73, -58, 30, 16, -43, -50, 48, 0, -11, 56, 74, 46 ]
+  Site 21: [ -31, -71, 7, 42, -47, -26, 46, 54, 14, 64, -1, -60, -50, -78, 52, 40, 33, -72, -57, -11, 0, 44, 36, 61 ]
+  Site 22: [ 15, -55, -34, -6, -1, -38, -58, -35, -24, 29, 10, 45, -48, 49, -63, -53, -75, 57, 70, 56, 44, 0, 41, -78 ]
+  Site 23: [ 3, -62, 66, -13, -7, -69, -59, 12, -19, 18, 34, -5, 43, -35, -67, 28, -77, -33, -75, 74, 36, 41, 0, 54 ]
+  Site 24: [ 64, -42, 33, 71, -72, 40, -11, 36, -52, -31, 57, 50, 60, 44, -14, -26, 7, -47, 1, 46, 61, -78, 54, 0 ]
+  For site 1 of kind 1:
+  [draw_int: system geometry not defined]
+  For site 2 of kind 2:
+  [draw_int: system geometry not defined]
+  For site 3 of kind 3:
+  [draw_int: system geometry not defined]
+  For site 5 of kind 4:
+  [draw_int: system geometry not defined]
+  For site 7 of kind 5:
+  [draw_int: system geometry not defined]
+  For site 9 of kind 6:
+  [draw_int: system geometry not defined]
+* Maximum (unsigned) Site pair kind: 79
+General system setup:
+* Number of sites       : 24
+* Number of electrons   : 24
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 24
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Writing full Jastrow parameter lists to "jastrow.dat".
+* Not using multideterminants
+* Not using a backflow transformation
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   7.3125E+12
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.02s]
+* Equil. acc.ratio (%)     =  16.8485
+* Sample config after equilibration:
+  [draw: system geometry not defined]
+* Number of accum. steps   = 501760 x 10
+* Running VMC accumulation.
+    [walltime: 1m elapsed, 27.9s remaining]
+  Done. [total walltime: 1m28s]
+* Acceptance ratio (%)     =  16.8192
+* Etot/t                   =  -9.159211156759E+02 +/-   1.462798740764E-04
+  > Ttot/t                 =  -9.555755161303E+01 +/-   1.218549066193E-03
+  > Utot/t                 =   4.254122418623E+01 +/-   1.213705140100E-03
+* var[Eloc/t]              =   1.047917911489E-02 +/-   1.283025126505E-04
+* Correlation length       =   1.024561255508E+00
+* log10 Psi^2 range: -48.040325090362025 -- -36.730316248973686
+* log10 Pgen range : -48.040325090362025 -- -36.730316248973686
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.498      0.499
+      2        0.500      0.500
+      3        0.496      0.499
+      4        0.501      0.498
+      5        0.501      0.502
+      6        0.502      0.495
+      7        0.501      0.499
+      8        0.500      0.497
+      9        0.499      0.500
+     10        0.498      0.501
+     11        0.498      0.502
+     12        0.502      0.499
+     13        0.501      0.501
+     14        0.500      0.500
+     15        0.497      0.500
+     16        0.499      0.500
+     17        0.499      0.499
+     18        0.502      0.503
+     19        0.500      0.500
+     20        0.502      0.501
+     21        0.504      0.501
+     22        0.502      0.501
+     23        0.498      0.499
+     24        0.501      0.502
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          4.453
+      1      0        0.891      0.677      2.476
+      2      0        0.444      0.338      1.237
+      3      0        0.691      1.160      2.217
+      4      0        0.349      0.579      1.111
+      5      0        0.558      1.413      2.125
+      6      0        0.563      1.423      2.120
+      7      0        0.559      1.418      2.129
+      8      0        0.577      1.426      2.105
+      9      0        0.287      0.713      1.054
+     10      0        0.128      1.015      0.984
+     11      0        0.257      2.047      1.966
+     12      0        0.169      0.923      1.030
+     13      0        0.340      1.851      2.065
+     14      0        0.318      1.838      2.098
+     15      0        0.319      1.827      2.093
+     16      0        0.316      1.829      2.094
+     17      0        0.290      2.067      1.952
+     18      0        0.289      2.060      1.947
+     19      0        0.291      2.058      1.950
+     20      0        0.080      0.486      0.503
+     21      0        0.157      0.967      1.011
+     22      0        0.149      1.013      0.981
+     23      0        0.297      2.026      1.968
+     24      0        0.267      2.079      1.944
+     25      0        0.265      2.079      1.943
+     26      0        0.265      2.084      1.951
+     27      0        0.150      1.001      0.994
+     28      0        0.298      2.006      1.976
+     29      0        0.273      2.022      1.977
+     30      0        0.273      2.026      1.976
+     31      0        0.270      2.031      1.985
+     32      0        0.273      2.030      1.982
+     33      0        0.271      2.029      1.980
+     34      0        0.274      2.017      1.977
+     35      0        0.286      1.937      2.033
+     36      0        0.286      1.948      2.032
+     37      0        0.274      1.988      2.013
+     38      0        0.275      1.985      2.010
+     39      0        0.288      1.942      2.038
+     40      0        0.274      1.994      2.015
+     41      0        0.259      2.104      1.930
+     42      0        0.259      2.110      1.949
+     43      0        0.258      2.103      1.934
+     44      0        0.260      1.956      2.046
+     45      0        0.262      1.941      2.050
+     46      0        0.260      1.948      2.057
+     47      0        0.125      1.022      0.995
+     48      0        0.252      2.040      1.970
+     49      0        0.130      0.988      1.009
+     50      0        0.256      1.980      2.030
+     51      0        0.274      2.007      1.992
+     52      0        0.275      2.009      2.001
+     53      0        0.276      2.002      1.994
+     54      0        0.273      2.012      1.996
+     55      0        0.275      2.010      1.993
+     56      0        0.254      1.991      2.015
+     57      0        0.249      2.025      2.000
+     58      0        0.249      2.023      1.992
+     59      0        0.273      2.007      1.987
+     60      0        0.251      2.026      1.997
+     61      0        0.126      1.002      1.012
+     62      0        0.301      2.015      1.973
+     63      0        0.278      1.987      2.003
+     64      0        0.277      1.995      2.010
+     65      0        0.277      1.985      2.008
+     66      0        0.149      1.007      0.984
+     67      0        0.305      1.966      2.007
+     68      0        0.303      1.973      2.013
+     69      0        0.304      1.963      2.010
+     70      0        0.126      1.003      1.000
+     71      0        0.278      1.995      2.013
+     72      0        0.125      1.006      1.009
+     73      0        0.127      0.999      1.004
+     74      0        0.275      1.983      2.007
+     75      0        0.280      1.980      2.002
+     76      0        0.077      0.496      0.501
+     77      0        0.153      0.982      0.998
+     78      0        0.251      2.009      2.010
+     79      0        0.124      1.007      1.000
+
+VDAGGER finished.
+Total VDAGGER walltime: 1m35s
+
+Run ended: Fri Nov  7 08:48:00 CET 2025

@@ -1,6 +1,8 @@
 MAXIMUM RANGE: 79 | JASTROW[78]
-CURRENTLY -- RUN6, RUN7, RUN8(nconfigs=150000): continuation to see if LOCAL MINIMA is exited.
+CURRENTLY -- RUN10 w/ MaxCyc=5 ; ConvCyc=3 ; MaxIter=Def ; nc=100000 ; Htol=1.e-10
 
+RUN9 w/ MaxCyc=7 ; ConvCyc=5 ; MaxIter=Def ; nc=100000 ; Htol=1.e-6 [ converged ] -> stays the same.
+RUN6, RUN7, RUN8(nconfigs=150000): continuation to see if LOCAL MINIMA is exited.
 RUN5: j[78] w/ MaxCyc=10, ConvCyc=5, MaxIter=Def --> converged.
 RUN4: continuation of RUN3 w/ MaxCyc=5, ConvCyc=3, MaxIter=1.
 RUN3: j[50]->j[78] w/ MaxCyc=7, ConvCyc=3, MaxIter=1.

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J vd[cn-new]
+#SBATCH -J vd[01c]
 #SBATCH -o output
 #SBATCH --mem=0
 #SBATCH --nodes=8
@@ -22,7 +22,7 @@ echo "Run started: $(date)"
 echo "Using VDAGGER_ARCH = gnu7_fkfamd_cluster"
 echo "Running 1x128 MPI processes."
 echo
-srun /home/dimauro/vdagger/build_gnu7_fkfamd_cluster_main_opt/bin/vdagger "input.casl"
+srun /home/dimauro/vdagger/build_gnu7_fkfamd_cluster_main_opt_stable/bin/vdagger "input.casl"
 echo
 echo "Run ended: $(date)"
 rm -f ".vdagger.lock"
