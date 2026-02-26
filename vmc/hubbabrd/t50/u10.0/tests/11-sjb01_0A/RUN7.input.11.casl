@@ -1,0 +1,25 @@
+General:
+   Random seed: timer
+Plan:
+  VMC-optimization:
+    Minimum cycles: 20
+    Convergence cycles: 10
+System:
+  Hubbard model:
+      Primitive cell:
+        a_1: [  1.0, 1.0 ]
+        a_2: [ -1.0, 1.0 ]
+      Simulation cell:
+        a_1: [ 10.0,  0.0 ]
+        a_2: [  0.0, 10.0 ]
+      U: 10.0
+      Dump Hamiltonian: FCIDUMP.new
+      Dump orbitals: LTSC.new
+  netot: 50
+VMC:
+  nstep: 10000000
+  nconfig: 500000
+  #Optimization:
+  #  max_niter: 1
+Jastrow: wfn.casl
+Backflow: wfn.casl

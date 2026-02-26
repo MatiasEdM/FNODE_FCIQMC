@@ -1,0 +1,105 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -13.524629318106200, optimizable ]
+  d-h term:
+    Range: 11
+    Parameters:
+      c_1: [ 0.27781767905105215, optimizable ]
+      c_2: [ 0.49283496912084002, optimizable ]
+      c_3: [ 0.35609598923653529, optimizable ]
+      c_4: [ 0.28071520658378590, optimizable ]
+      c_5: [ 0.20370238340386626, optimizable ]
+      c_6: [ 0.16949157683573399, optimizable ]
+      c_7: [ 0.15326040531250623, optimizable ]
+      c_8: [ 0.18379015328179901, optimizable ]
+      c_9: [ 5.9878222713506186E-002, optimizable ]
+      c_10: [ 6.7131962452172955E-002, optimizable ]
+      c_11: [ 2.1541691384557866E-002, optimizable ]
+  e-e term:
+    Range: 10
+    Parameters:
+      c_1,1: [ -0.48462374157517218, optimizable ]
+      c_1,2: [ -0.13455408530439547, optimizable ]
+      c_2,1: [ -0.27197828384484563, optimizable ]
+      c_2,2: [ -2.6448571440007868E-002, optimizable ]
+      c_3,1: [ -0.20485458686308633, optimizable ]
+      c_3,2: [ -1.6626179202468443E-002, optimizable ]
+      c_4,1: [ -0.25376635377585344, optimizable ]
+      c_4,2: [ -0.13769805667332688, optimizable ]
+      c_5,1: [ -0.10089246581830687, optimizable ]
+      c_5,2: [ -2.9190117468865490E-002, optimizable ]
+      c_6,1: [ -0.14974459436110757, optimizable ]
+      c_6,2: [ -8.2760570925056440E-002, optimizable ]
+      c_7,1: [ -6.7812370273919328E-002, optimizable ]
+      c_7,2: [ -2.0227799064745960E-002, optimizable ]
+      c_8,1: [ -0.16080806147602486, optimizable ]
+      c_8,2: [ -0.10623724256377887, optimizable ]
+      c_9,1: [ 1.0391580144257966E-002, optimizable ]
+      c_9,2: [ -3.0782751507095266E-002, optimizable ]
+      c_10,1: [ -6.3991597640405323E-002, optimizable ]
+      c_10,2: [ -3.3323612897289634E-002, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: discrete
+    Policy: dx
+    Parameters:
+      c_1: [ 0.57605803739379757, optimizable ]
+  d-h term:
+    Range: 11
+    Parameters:
+      c_1: [ 1.2956782935018127, optimizable ]
+      c_2: [ -0.13774097628455703, optimizable ]
+      c_3: [ 0.31517588144503123, optimizable ]
+      c_4: [ -0.48327531142609215, optimizable ]
+      c_5: [ 0.10936315321345109, optimizable ]
+      c_6: [ -0.17473902249359965, optimizable ]
+      c_7: [ -8.4175273587630189E-002, optimizable ]
+      c_8: [ -0.33613982324779568, optimizable ]
+      c_9: [ 4.7638172634199782E-002, optimizable ]
+      c_10: [ -0.30976860299952308, optimizable ]
+      c_11: [ 2.0858175808671844E-002, optimizable ]
+  d-e term:
+    Range: 11
+    Parameters:
+      c_1: [ 0.25622120995182335, optimizable ]
+      c_2: [ 3.6867335129504804E-002, optimizable ]
+      c_3: [ 0.33694267490453905, optimizable ]
+      c_4: [ -0.23152887878709069, optimizable ]
+      c_5: [ 0.20241269839398168, optimizable ]
+      c_6: [ 2.9777815345001322E-002, optimizable ]
+      c_7: [ 3.2825436669292773E-002, optimizable ]
+      c_8: [ -6.8215583083969536E-002, optimizable ]
+      c_9: [ 0.14644028990844690, optimizable ]
+      c_10: [ -1.1020747796912535E-002, optimizable ]
+      c_11: [ 0.14716141106059813, optimizable ]
+  e-h term:
+    Range: 11
+    Parameters:
+      c_1: [ 0.30005537314003400, optimizable ]
+      c_2: [ -0.45176374826906202, optimizable ]
+      c_3: [ 0.13802195221444893, optimizable ]
+      c_4: [ -0.27242719265962412, optimizable ]
+      c_5: [ -5.2481541506803148E-002, optimizable ]
+      c_6: [ 0.18239624730715701, optimizable ]
+      c_7: [ -0.30807084298422865, optimizable ]
+      c_8: [ -0.11965475800747732, optimizable ]
+      c_9: [ -0.14115137272543601, optimizable ]
+      c_10: [ -0.14915192198757132, optimizable ]
+      c_11: [ 0.51509043271770405, optimizable ]
+  e-e term:
+    Range: 11
+    Parameters:
+      c_1: [ 0.20441907544468657, optimizable ]
+      c_2: [ -0.21723889237686450, optimizable ]
+      c_3: [ 0.29657316654905358, optimizable ]
+      c_4: [ -0.12747196929901250, optimizable ]
+      c_5: [ 0.10151022738228500, optimizable ]
+      c_6: [ 0.20991789780926223, optimizable ]
+      c_7: [ -0.12163183705980454, optimizable ]
+      c_8: [ 9.5173390679408207E-002, optimizable ]
+      c_9: [ 4.0965544797883592E-002, optimizable ]
+      c_10: [ 5.1179337421085096E-002, optimizable ]
+      c_11: [ 0.36363498140183764, optimizable ]

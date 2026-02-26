@@ -1,0 +1,65 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -1.5515735618075299, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.18247403455338940, optimizable ]
+      c_2: [ 0.27154655567608260, optimizable ]
+      c_3: [ 0.15189354449787043, optimizable ]
+      c_4: [ 9.7188330069959389E-002, optimizable ]
+      c_5: [ 3.2956863264277381E-002, optimizable ]
+  e-e term:
+    Range: 5
+    Parameters:
+      c_1,1: [ -0.18085280058328659, optimizable ]
+      c_1,2: [ -0.17501797367063818, optimizable ]
+      c_2,1: [ -9.4732292584182545E-002, optimizable ]
+      c_2,2: [ -0.10756601564001519, optimizable ]
+      c_3,1: [ -5.4538054349315579E-002, optimizable ]
+      c_3,2: [ -5.7389607104152973E-002, optimizable ]
+      c_4,1: [ -6.8789998225924423E-002, optimizable ]
+      c_4,2: [ -6.3893948133639050E-002, optimizable ]
+      c_5,1: [ -6.0580662902339835E-003, optimizable ]
+      c_5,2: [ -1.3909414627241911E-002, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: discrete
+    Policy: dx
+    Parameters:
+      c_1: [ 7.0274874896824852E-002, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.10082086054223173, optimizable ]
+      c_2: [ -8.5137216750313920E-003, optimizable ]
+      c_3: [ 4.4924190707271222E-005, optimizable ]
+      c_4: [ -4.0367009026755427E-003, optimizable ]
+      c_5: [ 2.5475300041134575E-003, optimizable ]
+  d-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 2.7638892585347491E-002, optimizable ]
+      c_2: [ 5.1868921465044399E-003, optimizable ]
+      c_3: [ 3.7608445865057460E-003, optimizable ]
+      c_4: [ 2.3321481242229787E-004, optimizable ]
+      c_5: [ 1.5509806480497853E-003, optimizable ]
+  e-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.15444910699247102, optimizable ]
+      c_2: [ -0.13255754658361524, optimizable ]
+      c_3: [ -1.5151325237361055E-002, optimizable ]
+      c_4: [ 2.5853603268529417E-002, optimizable ]
+      c_5: [ 1.4602840591433573E-002, optimizable ]
+  e-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.14915397360743818, optimizable ]
+      c_2: [ -3.0881366057087939E-002, optimizable ]
+      c_3: [ 1.3766714906300572E-002, optimizable ]
+      c_4: [ 2.4595805618732113E-002, optimizable ]
+      c_5: [ 6.0768825630002337E-003, optimizable ]
