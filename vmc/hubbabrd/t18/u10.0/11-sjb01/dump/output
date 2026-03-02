@@ -1,4 +1,4 @@
-Run started: Fri Jan 23 17:09:13 CET 2026
+Run started: Mon Mar  2 09:31:07 CET 2026
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -23,7 +23,7 @@ Running 1x128 MPI processes.
      +##x    +xX     2nd quantized variational
        +xxxxx+       ______quantum Monte Carlo
 
-* Running 128 MPI processes.
+* Running 256 MPI processes.
 * Input file: "input.dump.casl"
 
 ############# Start of input file dump #############
@@ -48,7 +48,7 @@ System:
   netot: 18
 
 VMC:
-  nstep: 5000000
+  nstep: 40000000
   nconfig: 1000000
 
 Jastrow: wfn.casl
@@ -61,7 +61,7 @@ Backflow dump: backflow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 1420877549 (from timer)
+* Random seed: 381471984 (from timer)
 
 Hubbard system:
 * Dimensionality        : 2
@@ -210,6 +210,7 @@ Trial wave function setup:
 * Jastrow parameter file: "wfn.casl"
 * Writing full Jastrow parameter lists to "jastrow.dat".
 * Not using multideterminants
+* Not using an orbital rotation
 * Backflow parameter file: "wfn.casl"
 * Writing full backflow parameter lists to "backflow.dat".
 * Not using wave function manipulation
@@ -219,58 +220,58 @@ VMC #1:
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
   Done. [total walltime: 0.25s]
-* Equil. acc.ratio (%)     =   5.5143
+* Equil. acc.ratio (%)     =   5.7555
 * Sample config after equilibration:
   +-----------+
-  |  u   2   u|
-  |d   0   d  |
   |  u   u   u|
   |d   d   d  |
   |  u   u   u|
+  |2   d   d  |
+  |  u   u   0|
   |d   d   d  |
   +-----------+
-* Number of accum. steps   = 5000320 x 10
+* Number of accum. steps   = 40007680 x 10
 * Running VMC accumulation.
-    [walltime: 1m elapsed, 14.4s remaining]
-  Done. [total walltime: 1m14s]
-* Acceptance ratio (%)     =   5.4168
-* Etot/t                   =  -7.664896072510E+00 +/-   6.887361063144E-04
-  > Ttot/t                 =  -1.489608127672E+01 +/-   4.804831493488E-03
-  > Utot/t                 =   7.231185204147E+00 +/-   4.725267404532E-03
-* var[Eloc/t]              =   2.220252189659E+00 +/-   6.785351743840E-02
-* Correlation length       =   1.068319592760E+00
-* log10 Psi^2 range: -0.46240628365462326E-001 -- 13.149848642094797
-* log10 Pgen range : -0.46240628365462326E-001 -- 13.149848642094797
+    [walltime: 1m elapsed, 4m1s remaining]
+  Done. [total walltime: 5m]
+* Acceptance ratio (%)     =   5.5192
+* Etot/t                   =  -7.658514653720E+00 +/-   2.465756938672E-04
+  > Ttot/t                 =  -1.492629024036E+01 +/-   1.676702443578E-03
+  > Utot/t                 =   7.267775587087E+00 +/-   1.654452959884E-03
+* var[Eloc/t]              =   2.266611487379E+00 +/-   7.611922358232E-03
+* Correlation length       =   1.073165765950E+00
+* log10 Psi^2 range: 15.033061431729124 -- 28.335692513508835
+* log10 Pgen range : 15.033061431729124 -- 28.335692513508835
 * Site occupation (ave. no. electrons per config.):
   > Site_  ___eu____  ___ed____
-      1        0.502      0.499
-      2        0.499      0.501
-      3        0.501      0.499
-      4        0.499      0.502
-      5        0.501      0.499
+      1        0.501      0.499
+      2        0.500      0.500
+      3        0.500      0.500
+      4        0.500      0.500
+      5        0.500      0.500
       6        0.499      0.501
-      7        0.498      0.502
-      8        0.501      0.499
-      9        0.499      0.501
-     10        0.501      0.499
-     11        0.499      0.501
-     12        0.501      0.498
+      7        0.500      0.500
+      8        0.500      0.500
+      9        0.500      0.500
+     10        0.500      0.500
+     11        0.500      0.500
+     12        0.500      0.499
      13        0.501      0.499
-     14        0.499      0.501
-     15        0.501      0.499
-     16        0.499      0.501
-     17        0.502      0.499
-     18        0.498      0.502
+     14        0.500      0.500
+     15        0.500      0.500
+     16        0.500      0.500
+     17        0.500      0.500
+     18        0.500      0.500
 * Pair-correlation analysis (ave. no. pairs per config.):
   > Shell  nsite  ___dh____  __eueu___  __eued___
-      0      1        0          0          0.722
-      1      4        0.706      7.379     27.981
-      2      4        0.145     26.418      9.540
-      3      4        0.133     26.194      9.787
-      4      4        0.135      9.520     26.460
-      5      1        0.031      2.489      6.509
+      0      1        0          0          0.727
+      1      4        0.708      7.535     27.824
+      2      4        0.147     26.207      9.750
+      3      4        0.136     25.950     10.030
+      4      4        0.137      9.757     26.222
+      5      1        0.031      2.551      6.447
 
 VDAGGER finished.
-Total VDAGGER walltime: 1m15s
+Total VDAGGER walltime: 5m6s
 
-Run ended: Fri Jan 23 17:10:58 CET 2026
+Run ended: Mon Mar  2 09:36:44 CET 2026

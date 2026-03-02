@@ -1,0 +1,63 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -0.75665179852338682, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ -0.24442464782808473, optimizable ]
+      c_2: [ -2.2100633198549050E-002, optimizable ]
+      c_3: [ -8.8586794926889714E-002, optimizable ]
+      c_4: [ -0.13328560227234468, optimizable ]
+      c_5: [ -9.1656602978862203E-002, optimizable ]
+  e-e term:
+    Range: 4
+    Parameters:
+      c_1,1: [ -1.4582275427303764E-002, optimizable ]
+      c_1,2: [ -3.1540364744840531E-002, optimizable ]
+      c_2,1: [ 8.5034979608112113E-002, optimizable ]
+      c_2,2: [ 4.9509090613185348E-002, optimizable ]
+      c_3,1: [ 9.8780239812459522E-002, optimizable ]
+      c_3,2: [ 6.9254830829944755E-002, optimizable ]
+      c_4,1: [ 5.1596487097978518E-002, optimizable ]
+      c_4,2: [ 3.4763523005704074E-002, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: discrete
+    Policy: dx
+    Parameters:
+      c_1: [ 0.74269203631217329, optimizable ]
+  d-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 1.2674794341291440, optimizable ]
+      c_2: [ 2.0911031052427288E-002, optimizable ]
+      c_3: [ -2.6810781316988778E-002, optimizable ]
+      c_4: [ -0.51466684089835113, optimizable ]
+      c_5: [ -0.26742659437169192, optimizable ]
+  d-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.24886012751234854, optimizable ]
+      c_2: [ 0.23365053845709272, optimizable ]
+      c_3: [ 9.1194860979025724E-002, optimizable ]
+      c_4: [ -0.19131257324350354, optimizable ]
+      c_5: [ -8.2465118894881465E-002, optimizable ]
+  e-h term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.38135633755759418, optimizable ]
+      c_2: [ -0.29949453497469486, optimizable ]
+      c_3: [ -0.15066241503667313, optimizable ]
+      c_4: [ -0.28202576892131181, optimizable ]
+      c_5: [ -0.15726540531243241, optimizable ]
+  e-e term:
+    Range: 5
+    Parameters:
+      c_1: [ 0.24801334719740481, optimizable ]
+      c_2: [ 6.1492623830845103E-003, optimizable ]
+      c_3: [ 2.1862390882288913E-004, optimizable ]
+      c_4: [ -3.9038537984162555E-002, optimizable ]
+      c_5: [ -3.4514577181678510E-002, optimizable ]
