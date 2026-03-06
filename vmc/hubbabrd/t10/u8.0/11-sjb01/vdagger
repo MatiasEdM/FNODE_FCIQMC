@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH -J vdagger
+#SBATCH -J t10[u8a]
 #SBATCH -o output
 #SBATCH --mem=0
-#SBATCH --nodes=1
-#SBATCH --ntasks=128
+#SBATCH --nodes=2
+#SBATCH --ntasks=256
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=02:00:00

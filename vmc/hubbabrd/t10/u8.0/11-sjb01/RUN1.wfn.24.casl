@@ -1,0 +1,37 @@
+JASTROW:
+  d term:
+    Parameters:
+      c_1: [ -2.5487103157084192, optimizable ]
+  d-h term:
+    Range: 1
+    Parameters:
+      c_1: [ -0.12818251231211517, optimizable ]
+  e-e term:
+    Range: 1
+    Parameters:
+      c_1,1: [ -5.3938514160784767E-002, optimizable ]
+      c_1,2: [ 2.9838555316948005E-002, optimizable ]
+  Term mode: site centric
+
+BACKFLOW:
+  Self term:
+    Mode: discrete
+    Policy: dx
+    Parameters:
+      c_1: [ 1.3176749981859543, optimizable ]
+  d-h term:
+    Range: 1
+    Parameters:
+      c_1: [ 0.20728866301637369, optimizable ]
+  d-e term:
+    Range: 1
+    Parameters:
+      c_1: [ -0.17398592430720969, optimizable ]
+  e-h term:
+    Range: 1
+    Parameters:
+      c_1: [ -0.12226993591763620, optimizable ]
+  e-e term:
+    Range: 1
+    Parameters:
+      c_1: [ -0.13733224761059229, optimizable ]

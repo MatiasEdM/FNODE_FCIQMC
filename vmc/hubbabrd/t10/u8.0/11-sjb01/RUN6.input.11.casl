@@ -2,8 +2,8 @@ General:
    Random seed: timer
 Plan:
   VMC-optimization:
-    Minimum cycles: 20
-    Convergence cycles: 10
+    Minimum cycles: 10
+    Convergence cycles: 7
 System:
   Hubbard model:
       Primitive cell:
@@ -17,8 +17,8 @@ System:
       Dump orbitals: LTSC.new
   netot: 10
 VMC:
-  nstep: 500000
-  nconfig: 100000
+  nstep:  20000000
+  nconfig: 5000000
   #Optimization:
   #  max_niter: 1
 Jastrow: wfn.casl
