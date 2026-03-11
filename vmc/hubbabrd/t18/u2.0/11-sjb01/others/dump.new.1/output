@@ -1,4 +1,4 @@
-Run started: Thu Feb 26 16:47:30 CET 2026
+Run started: Mon Mar  9 10:04:09 CET 2026
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -61,7 +61,7 @@ Backflow dump: backflow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 62209245 (from timer)
+* Random seed: 988408315 (from timer)
 
 Hubbard system:
 * Dimensionality        : 2
@@ -220,58 +220,58 @@ VMC #1:
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
   Done. [total walltime: 0.28s]
-* Equil. acc.ratio (%)     =  43.4577
+* Equil. acc.ratio (%)     =  43.4557
 * Sample config after equilibration:
   +-----------+
-  |  u   0   d|
-  |2   u   u  |
-  |  d   u   d|
-  |2   0   d  |
-  |  u   d   0|
-  |2   u   d  |
+  |  2   u   2|
+  |0   d   2  |
+  |  2   0   u|
+  |u   0   d  |
+  |  u   d   d|
+  |u   0   d  |
   +-----------+
 * Number of accum. steps   = 40007680 x 10
 * Running VMC accumulation.
-    [walltime: 1m elapsed, 3m51s remaining]
-  Done. [total walltime: 4m50s]
-* Acceptance ratio (%)     =  43.4537
-* Etot/t                   =  -2.377948990488E+01 +/-   3.131464608913E-05
-  > Ttot/t                 =  -3.120372570160E+01 +/-   3.640967691729E-04
-  > Utot/t                 =   7.424235796727E+00 +/-   3.621162941326E-04
-* var[Eloc/t]              =   3.915211427442E-02 +/-   2.890460910467E-04
-* Correlation length       =   1.002035628900E+00
-* log10 Psi^2 range: 0.77126789143697050 -- 11.086333652014075
-* log10 Pgen range : 0.77126789143697050 -- 11.086333652014075
+    [walltime: 1m elapsed, 3m53s remaining]
+  Done. [total walltime: 4m52s]
+* Acceptance ratio (%)     =  43.4568
+* Etot/t                   =  -2.377942945093E+01 +/-   3.229006290161E-05
+  > Ttot/t                 =  -3.120570380626E+01 +/-   3.675486027096E-04
+  > Utot/t                 =   7.426274355324E+00 +/-   3.657181558653E-04
+* var[Eloc/t]              =   4.155059967277E-02 +/-   1.055179344281E-03
+* Correlation length       =   1.003930974619E+00
+* log10 Psi^2 range: 1.0127306528060194 -- 11.072165715599013
+* log10 Pgen range : 1.0127306528060194 -- 11.072165715599013
 * Site occupation (ave. no. electrons per config.):
   > Site_  ___eu____  ___ed____
       1        0.500      0.500
-      2        0.500      0.500
-      3        0.500      0.499
+      2        0.499      0.501
+      3        0.500      0.500
       4        0.500      0.500
-      5        0.500      0.501
+      5        0.501      0.499
       6        0.500      0.500
       7        0.500      0.500
-      8        0.500      0.500
-      9        0.500      0.500
-     10        0.500      0.500
+      8        0.501      0.499
+      9        0.499      0.500
+     10        0.501      0.500
      11        0.500      0.500
-     12        0.501      0.500
-     13        0.500      0.499
-     14        0.499      0.500
-     15        0.501      0.500
-     16        0.500      0.500
-     17        0.500      0.500
+     12        0.500      0.500
+     13        0.500      0.500
+     14        0.500      0.501
+     15        0.500      0.499
+     16        0.501      0.500
+     17        0.501      0.500
      18        0.499      0.500
 * Pair-correlation analysis (ave. no. pairs per config.):
   > Shell  nsite  ___dh____  __eueu___  __eued___
-      0      1        0          0          3.712
-      1      4        4.631     14.276     19.001
-      2      4        3.180     18.183     17.591
-      3      4        3.146     18.153     17.684
-      4      4        3.360     16.972     18.464
-      5      1        0.784      4.416      4.548
+      0      1        0          0          3.714
+      1      4        4.635     14.274     18.997
+      2      4        3.182     18.182     17.593
+      3      4        3.147     18.155     17.688
+      4      4        3.364     16.973     18.460
+      5      1        0.785      4.416      4.548
 
 VDAGGER finished.
-Total VDAGGER walltime: 4m58s
+Total VDAGGER walltime: 5m1s
 
-Run ended: Thu Feb 26 16:53:00 CET 2026
+Run ended: Mon Mar  9 10:09:42 CET 2026

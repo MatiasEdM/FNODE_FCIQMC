@@ -1,0 +1,276 @@
+Run started: Fri Jan 16 14:01:11 CET 2026
+Using VDAGGER_ARCH = gnu7_fkfamd_cluster
+Running 1x128 MPI processes.
+
+                               xx
+                              +##
+                               #X
+                               Xx
+                          X##XxXxxX##x
+                           +   Xx  ++
+                               ##
+                              +##
+                              +##
+     ++++         ++          +##
+   xX+++##+      ####         +##
+  Xx    ###      +X##          ##
+ xX    X##+        ##          #X
+ +    x##X         #x          #X
+      ###         +#           x+
+     X##+         #+
+     ###         Xx                    _______
+     ##X       +X+   __________________VDAGGER
+     +##x    +xX     2nd quantized variational
+       +xxxxx+       ______quantum Monte Carlo
+
+* Running 128 MPI processes.
+* Input file: "input.dump.casl"
+
+############# Start of input file dump #############
+General:
+  Random seed: timer
+
+Plan:
+  VMC-optimization:
+    Maximum cycles: 0
+
+System:
+  Hubbard model:
+    Primitive cell:
+      a_1: [ 1.0, 1.0 ]
+      a_2: [ -1.0, 1.0 ]
+    Simulation cell:
+      a_1: [ 6.0, 0.0 ]
+      a_2: [ 0.0, 6.0 ]
+    U: 4.0
+    Dump Hamiltonian: FCIDUMP.new
+    Dump orbitals: LTSC.new
+  netot: 18
+
+VMC:
+  nstep: 5000000
+  nconfig: 1000000
+
+Jastrow: wfn.casl
+
+Backflow: wfn.casl
+
+Jastrow dump: jastrow.dat
+
+Backflow dump: backflow.dat
+############## End of input file dump ##############
+
+General setup:
+* Random seed: 815099644 (from timer)
+
+Hubbard system:
+* Dimensionality        : 2
+* Simulation cell:
+  > a_1 =   6.000000000000E+00   0.000000000000E+00
+  > a_2 =   0.000000000000E+00   6.000000000000E+00
+* Primitive cell:
+  > a_1 =   1.000000000000E+00   1.000000000000E+00
+  > a_2 =  -1.000000000000E+00   1.000000000000E+00
+* Prim.cells in sim.cell: 18
+* Number of sublattices : 1
+* # real-space shells   : 5
+  > Shell #1: 4 sites, rij =  1.4142E+00
+  > Shell #2: 4 sites, rij =  2.0000E+00
+  > Shell #3: 4 sites, rij =  2.8284E+00
+  > Shell #4: 4 sites, rij =  3.1623E+00
+  > Shell #5: 1 sites, rij =  4.2426E+00
+* Site labels:
+  +-----------------+
+  |    6    11    16|
+  |15     5    10   |
+  |   14     4     9|
+  | 8    13     3   |
+  |    7    18     2|
+  | 1    12    17   |
+  +-----------------+
+* Shell diagram:
+  +-----------+
+  |  4   4   5|
+  |3   2   3  |
+  |  1   1   4|
+  |2   0   2  |
+  |  1   1   4|
+  |3   2   3  |
+  +-----------+
+* Hop multiplicity diagram:
+  +-----------+
+  |  -   -   -|
+  |-   -   -  |
+  |  1   1   -|
+  |-   0   -  |
+  |  1   1   -|
+  |-   -   -  |
+  +-----------+
+* Reciprocal lattice of the simulation cell:
+  > b_1 =   1.047197551197E+00  -0.000000000000E+00
+  > b_2 =  -0.000000000000E+00   1.047197551197E+00
+* k-vector offset:
+  > Fractional:   0.000000000000E+00   0.000000000000E+00
+  > Absolute  :   0.000000000000E+00   0.000000000000E+00
+* G-vector occupation diagram:
+  +------0------+
+  |      -      |
+  |    - - -    |
+  |  - 2 2 2 -  |
+  0- - 2 2 2 - -0
+  |  - 2 2 2 -  |
+  |    - - -    |
+  |      -      |
+  +------0------+
+* G-vectors and non-interacting energy levels:
+  > G_1 = [   0.0000E+00,  0.0000E+00,  0.0000E+00 ], e =  -4.0000E+00
+  > G_2 = [  -1.0472E+00,  0.0000E+00,  0.0000E+00 ], e =  -2.0000E+00
+  > G_3 = [   1.0472E+00,  0.0000E+00,  0.0000E+00 ], e =  -2.0000E+00
+  > G_4 = [   0.0000E+00,  1.0472E+00,  0.0000E+00 ], e =  -2.0000E+00
+  > G_5 = [   0.0000E+00, -1.0472E+00,  0.0000E+00 ], e =  -2.0000E+00
+  > G_6 = [  -1.0472E+00, -1.0472E+00,  0.0000E+00 ], e =  -1.0000E+00
+  > G_7 = [   1.0472E+00,  1.0472E+00,  0.0000E+00 ], e =  -1.0000E+00
+  > G_8 = [   1.0472E+00, -1.0472E+00,  0.0000E+00 ], e =  -1.0000E+00
+  > G_9 = [  -1.0472E+00,  1.0472E+00,  0.0000E+00 ], e =  -1.0000E+00 = e_F
+  > G_10 = [  -2.0944E+00, -1.0472E+00,  0.0000E+00 ], e =   1.0000E+00
+  > G_11 = [   2.0944E+00,  1.0472E+00,  0.0000E+00 ], e =   1.0000E+00
+  > G_12 = [   1.0472E+00,  2.0944E+00,  0.0000E+00 ], e =   1.0000E+00
+  > G_13 = [  -1.0472E+00, -2.0944E+00,  0.0000E+00 ], e =   1.0000E+00
+  > ...
+* U/t                   :  4.00000000000E+00
+* Hartree-Fock Etot/t   : -1.40000000000E+01
+  > Ttot/t              : -3.20000000000E+01
+  > Utot/t              :  1.80000000000E+01
+* Writing Hamiltonian to "FCIDUMP.new".
+* Writing orbitals to "LTSC.new".
+* Analysis of Hamiltonian connecitivity performed:
+  - U_iiii [opp] (local, 1-site): 18 (i) values
+  - T_ji (single, 2-site): 72 contribs. from 18 (i) values
+  - Max. no. wfn. ratios in Eloc: 4
+* Site labels:
+  +-----------------+
+  |    6    11    16|
+  |15     5    10   |
+  |   14     4     9|
+  | 8    13     3   |
+  |    7    18     2|
+  | 1    12    17   |
+  +-----------------+
+* Model system Site kinds:
+  [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+  +-----------+
+  |  1   1   1|
+  |1   1   1  |
+  |  1   1   1|
+  |1   1   1  |
+  |  1   1   1|
+  |1   1   1  |
+  +-----------+
+* Maximum Site kind: 1
+* Model system Site pair kinds:
+  Site 1: [ 0, 1, 3, 5, 3, 1, 1, 2, 4, 3, 4, 2, 3, 4, 2, 1, 2, 4 ]
+  Site 2: [ 1, 0, 1, 3, 5, 3, 2, 1, 2, 4, 3, 4, 4, 3, 4, 2, 1, 2 ]
+  Site 3: [ 3, 1, 0, 1, 3, 5, 4, 2, 1, 2, 4, 3, 2, 4, 3, 4, 2, 1 ]
+  Site 4: [ 5, 3, 1, 0, 1, 3, 3, 4, 2, 1, 2, 4, 1, 2, 4, 3, 4, 2 ]
+  Site 5: [ 3, 5, 3, 1, 0, 1, 4, 3, 4, 2, 1, 2, 2, 1, 2, 4, 3, 4 ]
+  Site 6: [ 1, 3, 5, 3, 1, 0, 2, 4, 3, 4, 2, 1, 4, 2, 1, 2, 4, 3 ]
+  Site 7: [ 1, 2, 4, 3, 4, 2, 0, 1, 3, 5, 3, 1, 1, 2, 4, 3, 4, 2 ]
+  Site 8: [ 2, 1, 2, 4, 3, 4, 1, 0, 1, 3, 5, 3, 2, 1, 2, 4, 3, 4 ]
+  Site 9: [ 4, 2, 1, 2, 4, 3, 3, 1, 0, 1, 3, 5, 4, 2, 1, 2, 4, 3 ]
+  Site 10: [ 3, 4, 2, 1, 2, 4, 5, 3, 1, 0, 1, 3, 3, 4, 2, 1, 2, 4 ]
+  Site 11: [ 4, 3, 4, 2, 1, 2, 3, 5, 3, 1, 0, 1, 4, 3, 4, 2, 1, 2 ]
+  Site 12: [ 2, 4, 3, 4, 2, 1, 1, 3, 5, 3, 1, 0, 2, 4, 3, 4, 2, 1 ]
+  Site 13: [ 3, 4, 2, 1, 2, 4, 1, 2, 4, 3, 4, 2, 0, 1, 3, 5, 3, 1 ]
+  Site 14: [ 4, 3, 4, 2, 1, 2, 2, 1, 2, 4, 3, 4, 1, 0, 1, 3, 5, 3 ]
+  Site 15: [ 2, 4, 3, 4, 2, 1, 4, 2, 1, 2, 4, 3, 3, 1, 0, 1, 3, 5 ]
+  Site 16: [ 1, 2, 4, 3, 4, 2, 3, 4, 2, 1, 2, 4, 5, 3, 1, 0, 1, 3 ]
+  Site 17: [ 2, 1, 2, 4, 3, 4, 4, 3, 4, 2, 1, 2, 3, 5, 3, 1, 0, 1 ]
+  Site 18: [ 4, 2, 1, 2, 4, 3, 2, 4, 3, 4, 2, 1, 1, 3, 5, 3, 1, 0 ]
+  For site 1 of kind 1:
+  +-----------+
+  |  1   4   1|
+  |2   3   3  |
+  |  4   5   4|
+  |2   3   3  |
+  |  1   4   1|
+  |0   2   2  |
+  +-----------+
+* Maximum (unsigned) Site pair kind: 5
+
+General system setup:
+* Number of sites       : 18
+* Number of electrons   : 18
+* Spin imbalance MS2    : 0
+* Filling               : 0.500000
+* Number of orbitals in pool: 21
+* Using real-valued orbitals
+* Using double-precision arithmetic for orbitals
+
+Trial wave function setup:
+* Jastrow parameter file: "wfn.casl"
+* Writing full Jastrow parameter lists to "jastrow.dat".
+* Not using multideterminants
+* Backflow parameter file: "wfn.casl"
+* Writing full backflow parameter lists to "backflow.dat".
+* Not using wave function manipulation
+
+VMC #1:
+* Size of Hilbert space =   2.3639E+09
+* Number of equil. steps   = 1000
+* Running VMC equilibration.
+  Done. [total walltime: 0.29s]
+* Equil. acc.ratio (%)     =  33.9349
+* Sample config after equilibration:
+  +-----------+
+  |  d   u   d|
+  |u   d   u  |
+  |  2   u   d|
+  |0   d   d  |
+  |  d   2   u|
+  |u   0   u  |
+  +-----------+
+* Number of accum. steps   = 5000320 x 10
+* Running VMC accumulation.
+    [walltime: 1m elapsed, 14.6s remaining]
+  Done. [total walltime: 1m14s]
+* Acceptance ratio (%)     =  33.7824
+* Etot/t                   =  -1.719801408296E+01 +/-   2.375594752116E-04
+  > Ttot/t                 =  -2.856024210036E+01 +/-   2.103158329657E-03
+  > Utot/t                 =   1.136222801741E+01 +/-   2.074686405666E-03
+* var[Eloc/t]              =   2.828242368468E-01 +/-   2.529280469244E-03
+* Correlation length       =   9.977595396408E-01
+* log10 Psi^2 range: 2.4775929191864283 -- 13.675547884397204
+* log10 Pgen range : 2.4775929191864283 -- 13.675547884397204
+* Site occupation (ave. no. electrons per config.):
+  > Site_  ___eu____  ___ed____
+      1        0.501      0.500
+      2        0.499      0.500
+      3        0.501      0.499
+      4        0.499      0.501
+      5        0.501      0.500
+      6        0.500      0.501
+      7        0.500      0.500
+      8        0.500      0.499
+      9        0.500      0.500
+     10        0.500      0.500
+     11        0.499      0.500
+     12        0.500      0.499
+     13        0.500      0.500
+     14        0.500      0.500
+     15        0.500      0.500
+     16        0.500      0.501
+     17        0.500      0.500
+     18        0.500      0.500
+* Pair-correlation analysis (ave. no. pairs per config.):
+  > Shell  nsite  ___dh____  __eueu___  __eued___
+      0      1        0          0          2.839
+      1     18        3.101     13.577     20.390
+      2     18        1.944     18.954     16.779
+      3     18        1.892     18.829     17.002
+      4     18        1.992     16.360     19.296
+      5     18        0.463      4.280      4.694
+
+VDAGGER finished.
+Total VDAGGER walltime: 1m15s
+
+Run ended: Fri Jan 16 14:02:57 CET 2026

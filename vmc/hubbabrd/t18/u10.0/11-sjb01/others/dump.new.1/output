@@ -1,4 +1,4 @@
-Run started: Fri Feb 27 11:49:44 CET 2026
+Run started: Tue Mar 10 10:53:00 CET 2026
 Using VDAGGER_ARCH = gnu7_fkfamd_cluster
 Running 1x128 MPI processes.
 
@@ -61,7 +61,7 @@ Backflow dump: backflow.dat
 ############## End of input file dump ##############
 
 General setup:
-* Random seed: 131543366 (from timer)
+* Random seed: 1077738269 (from timer)
 
 Hubbard system:
 * Dimensionality        : 2
@@ -219,59 +219,59 @@ VMC #1:
 * Size of Hilbert space =   2.3639E+09
 * Number of equil. steps   = 1000
 * Running VMC equilibration.
-  Done. [total walltime: 0.13s]
-* Equil. acc.ratio (%)     =   5.6849
+  Done. [total walltime: 0.25s]
+* Equil. acc.ratio (%)     =   5.6089
 * Sample config after equilibration:
   +-----------+
-  |  0   u   d|
-  |u   2   2  |
-  |  u   0   d|
-  |d   d   d  |
+  |  2   u   u|
+  |d   0   d  |
   |  d   u   u|
-  |u   d   u  |
+  |u   d   d  |
+  |  u   u   u|
+  |d   d   d  |
   +-----------+
 * Number of accum. steps   = 40007680 x 10
 * Running VMC accumulation.
-    [walltime: 1m elapsed, 3m24s remaining]
-  Done. [total walltime: 4m25s]
-* Acceptance ratio (%)     =   5.4955
-* Etot/t                   =  -7.658172759248E+00 +/-   2.441209621320E-04
-  > Ttot/t                 =  -1.492382375287E+01 +/-   1.663168330496E-03
-  > Utot/t                 =   7.265650995009E+00 +/-   1.639288726906E-03
-* var[Eloc/t]              =   2.250950890543E+00 +/-   1.720707664062E-02
-* Correlation length       =   1.059223222526E+00
-* log10 Psi^2 range: 17.385961140656072 -- 30.520856634656656
-* log10 Pgen range : 17.385961140656072 -- 30.520856634656656
+    [walltime: 1m elapsed, 4m1s remaining]
+  Done. [total walltime: 5m]
+* Acceptance ratio (%)     =   5.4704
+* Etot/t                   =  -7.659243508143E+00 +/-   2.446102509600E-04
+  > Ttot/t                 =  -1.489384021537E+01 +/-   1.692543998781E-03
+  > Utot/t                 =   7.234596707432E+00 +/-   1.669913216889E-03
+* var[Eloc/t]              =   2.320316959615E+00 +/-   9.613510387380E-03
+* Correlation length       =   1.031680827712E+00
+* log10 Psi^2 range: 15.307391862927194 -- 27.852139985147570
+* log10 Pgen range : 15.307391862927194 -- 27.852139985147570
 * Site occupation (ave. no. electrons per config.):
   > Site_  ___eu____  ___ed____
       1        0.500      0.500
-      2        0.500      0.500
-      3        0.500      0.500
+      2        0.499      0.501
+      3        0.500      0.499
       4        0.500      0.500
       5        0.500      0.500
       6        0.500      0.500
-      7        0.499      0.501
-      8        0.500      0.500
+      7        0.500      0.500
+      8        0.501      0.500
       9        0.500      0.500
-     10        0.500      0.500
-     11        0.500      0.500
-     12        0.500      0.500
+     10        0.500      0.499
+     11        0.499      0.501
+     12        0.500      0.499
      13        0.500      0.500
-     14        0.500      0.500
+     14        0.499      0.501
      15        0.500      0.500
-     16        0.500      0.500
+     16        0.500      0.501
      17        0.500      0.500
-     18        0.501      0.499
+     18        0.500      0.500
 * Pair-correlation analysis (ave. no. pairs per config.):
   > Shell  nsite  ___dh____  __eueu___  __eued___
-      0      1        0          0          0.726
-      1      4        0.708      7.602     27.757
-      2      4        0.148     26.125      9.831
-      3      4        0.136     25.864     10.116
-      4      4        0.136      9.834     26.146
-      5      1        0.031      2.575      6.423
+      0      1        0          0          0.723
+      1      4        0.705      6.828     28.533
+      2      4        0.146     27.063      8.894
+      3      4        0.136     26.870      9.110
+      4      4        0.136      8.923     27.057
+      5      1        0.031      2.315      6.683
 
 VDAGGER finished.
-Total VDAGGER walltime: 4m29s
+Total VDAGGER walltime: 5m6s
 
-Run ended: Fri Feb 27 11:54:39 CET 2026
+Run ended: Tue Mar 10 10:58:37 CET 2026
