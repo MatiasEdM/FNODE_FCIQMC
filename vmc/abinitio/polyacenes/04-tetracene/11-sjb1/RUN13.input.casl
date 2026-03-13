@@ -2,11 +2,12 @@ General:
    Random seed: timer
 Plan:
   VMC-optimization:
-    Minimum cycles: 5
-    Convergence cycles: 3
+    Minimum cycles: 7
+    Convergence cycles: 5
 System:
   Read Hamiltonian: FCIDUMP_loc
   Read orbitals: LTSC.mat
+  Hamiltonian tolerance: 1.e-06
   Complex orbitals: F
   Geometry:
     r_6:  [  2.65527474609200,  6.99295716670100 ]
